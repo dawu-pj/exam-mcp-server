@@ -1,0 +1,27 @@
+# 本地虚拟环境（换机器用 setup.ps1 重建，绝不入库）
+.venv/
+venv/
+
+# Scrapy 采集缓存（原始 HTTP 响应，体积大且与 data/clean 重复）
+.scrapy/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 本地运行时状态（不入库：每台机器各自生成）
+data/raw/
+data/mcp_cache/
+data/mcp_audit.jsonl
+data/*.log
+
+# 保留入库：data/clean/ 下 22 篇公告 + 元数据（413K，云端查询需要）
+# 说明：这些是公开考试公告，非隐私数据
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

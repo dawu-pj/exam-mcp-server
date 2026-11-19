@@ -1,0 +1,120 @@
+# crawler-mvp
+
+给大模型供信息的爬虫 MVP —— Python 版，本机开发。
+
+> ✅ **状态（2026-11-19）：MVP 闭环 + MCP 工具层 + 部署/日常入口已跑通**——5 站真实采集 22 篇、脱敏去重落盘、BM25 检索评估 Top-1 命中率 100%；MCP Server 4 工具 + 双传输 + 5 层安全闸门全部实测通过。详见 `MVP交付说明.md`、`MCP接入指南.md`（大模型调用）、`部署与日常使用速查.md`（装+用入口）、**`零环境部署指南.md`**（不装 Python，推 GitHub 上云 / 国内云函数 / 便携 exe / WSL2 四条路）。
+>
+> ☁️ **免安装上云已备好**：`app.py`（ASGI 入口，`mcp.http_app(stateless_http=True)`）+ `.gitignore`（缓存/venv 排除，保留 22 篇数据）。uvicorn 起服务 + 客户端经 `/mcp` 调用已实测通过。FastMCP Gateway 入口填 `src/mcp_server.py:mcp`。
+
+## 最快上手
+
+```powershell
+powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一键安装（本机已装可跳过）
+.\.venv\Scripts\python.exe quick.py ask "四六级报名"             # 秒查已入库
+.\.venv\Scripts\python.exe quick.py research "考研报名流程"      # 多轮调研闭环
+.\.venv\Scripts\python.exe quick.py serve --http --port 8765    # 启动 MCP 服务给大模型
+```
+日常所有操作收拢在 `quick.py`（ask/sites/fetch/research/crawl/serve/add-site/verify）。三种拿信息的路径与速度对比见 `部署与日常使用速查.md` 第 2 节。
+
+## MCP 入口（给大模型调用）
+
+```powershell
+.\.venv\Scripts\python.exe src\mcp_server.py --transport streamable-http --host 0.0.0.0 --port 8765   # 远程大模型（主方案）
+.\.venv\Scripts\python.exe src\mcp_server.py --transport stdio                                        # 本机客户端
+.\.venv\Scripts\python.exe tests\test_mcp.py                                                          # MCP 端到端测试
+```
+
+4 个工具：`query_local` / `search_site` / `fetch_page`（受控实时抓取）/ `research`（多轮调研闭环）。你的大模型不在本机 → 用 streamable-http 挂载，配置示例与安全边界见 `MCP接入指南.md`。
+
+## 一键复现
+
+```powershell
+.\.venv\Scripts\python.exe src\selftest.py                    # 链路自检
+.\.venv\Scripts\python.exe -m scrapy crawl exam               # 真实采集（限速约 20 秒）
+.\.venv\Scripts\python.exe tests\evaluate.py                  # 检索评估
+.\.venv\Scripts\python.exe src\retrieve.py "四六级报名"        # 手动查询
+```
+
+> 语言决策已收敛：Python + 本机（`Go技术栈可行性修正报告.md` 中的 Go 方案已被用户否决，仅作推演记录）。
+> 设计依据：`../爬虫项目立项调研报告.md`、`../GitHub开源项目调研与选型报告.md`、`../爬虫行业100关键词认知框架.md`、`../MVP开工确认清单.md`。
+
+## 环境状态（2026-11-19 实测就绪）
+
+| 项 | 值 |
+|---|---|
+| Python | **3.12.16**（`C:\software\uv\python\cpython-3.12.16-windows-x86_64-none\python.exe`） |
+| uv | 0.13.9（`C:\software\uv\bin\uv.exe`） |
+| 虚拟环境 | 项目内 `.venv\`，未改系统 PATH |
+| 依赖 | 58 包，`requirements.txt` 全部 pin 死版本 |
+| 链路自检 | **全通过**（抽取 / 分词 / BM25 检索 / 元数据契约） |
+
+启动方式：
+
+```powershell
+.\.venv\Scripts\python.exe src\selftest.py
+```
+
+## 技术栈（按调研锁定，分阶段落地）
+
+```
+采集层   Scrapy 2.13.3  —— robots 遵守 + 每域 1 req/s + 下载延迟 1s（项目模板默认值）
+         ↓ 原始 HTML + 元数据 sidecar（统一中间契约）
+抽取层   trafilatura 2.0.0 —— 正文抽取（FineWeb 同款，Apache-2.0）
+         + 站点级 CSS 选择器（goquery 思路的 Python 实现：parsel，Scrapy 自带）
+清洗层   jieba 0.42.1 中文分词 + URL 规范化 + 中文 PII 规则脱敏（待实现）
+         + SimHash 近重复检测（待实现，MVP 阶段先 URL 级去重）
+检索层   rank-bm25 0.2.2 —— 先验 recall@k，不接 embedding（已定 P0-5）
+评估层   50 页人工校验样本 + 10-20 个 golden set 问题（待用户提供站点后固化）
+```
+
+## 已纳入的 8 个盲区（来自 100 词框架）
+
+| 盲区 | 状态 | 落点 |
+|---|---|---|
+| B1 采后义务（PII 删除/匿名化） | 设计中 | 清洗层独立模块；中文姓名只标记不删 |
+| B2 网页变了怎么办（重访/URL 规范化/删除同步） | 设计中 | sidecar 记录内容指纹与抓取时间 |
+| B3 元数据边界 | ✅ 已落 | `selftest.py` 的 `MetadataSidecar`：6 字段，含解析器/索引版本 |
+| B4 robots 取不到时（4xx 放行 / 5xx 全禁） | 设计中 | Scrapy 中间件，RFC9309 规则 |
+| Q1 结构分块（非固定 512） | 待检索验证后定 | 先 BM25 验证，再决定分块策略 |
+| Q2 混合检索 + reranker | 延期阶段 2 | 已确认 |
+| Q3 评估集固化 | 待用户提供站点 | golden set 落 `tests/` |
+| S1 通用/聚焦微调 | 已定 | A 通用广覆盖 / B 聚焦领域站点 |
+
+## 目标站点（P0-2 已由实测补齐，见 `考试站点实测选型结论.md`）
+
+5 个境内官方/权威站，全部实测可抓、robots 允许、正文抽取质量过关：
+neea.edu.cn / cet.neea.edu.cn / yz.chsi.com.cn / ncre.neea.edu.cn / eol.cn。
+中国人事考试网（cpta.com.cn）因阿里云 WAF 拦截机器人 UA 已剔除（不绕、不换指纹）。
+
+探测脚本：`src/probe_sites.py` + `src/probe_articles.py`，留痕在 `data/*.json`。
+
+## 目录结构
+
+```
+crawler-mvp/
+├── .venv/              隔离环境（不入库）
+├── crawler/            Scrapy 采集与清洗
+│   ├── settings.py     合规配置（robots/限速/退避/缓存）
+│   ├── items.py        数据项（RawPageItem / CleanDoc）
+│   ├── cleaning.py     PII 脱敏 + URL 规范化 + 内容指纹
+│   ├── pipelines.py    抽取→清洗→去重→落盘
+│   └── spiders/
+│       └── exam_spider.py   5 站配置驱动 spider
+├── src/
+│   ├── selftest.py     链路自检（已通过）
+│   ├── probe_sites.py  站点+robots 探测
+│   ├── probe_articles.py  内页正文探测
+│   └── retrieve.py     BM25 检索 + 出处
+├── data/
+│   ├── clean/          22 组 Markdown + sidecar（已采集）
+│   ├── probe_report.json / article_probe_report.json  探测留痕
+│   └── httpcache/      HTTP 缓存
+├── tests/
+│   ├── golden_set.json 5 个真实问题评估集
+│   └── evaluate.py     recall@k 评估脚本
+├── MVP交付说明.md       完整交付与 8 盲区核验
+├── 考试站点实测选型结论.md
+├── pyproject.toml      uv 项目配置
+├── requirements.txt    pin 死版本依赖清单
+└── README.md           本文件
+```

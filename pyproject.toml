@@ -1,0 +1,13 @@
+[project]
+name = "crawler-mvp"
+version = "0.1.0"
+description = "MVP: 公开静态页采集 -> 正文抽取 -> BM25 检索评估（给大模型供信息）"
+requires-python = ">=3.12,<3.13"
+
+[tool.uv]
+python-preference = "only-managed"
+
+[tool.uv.sources]
+
+[project.optional-dependencies]
+dev = []
