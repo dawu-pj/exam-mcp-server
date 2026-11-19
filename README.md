@@ -7,6 +7,8 @@
 > ☁️ **免安装上云已备好**：`app.py`（ASGI 入口，`mcp.http_app(stateless_http=True)`）+ `.gitignore`（缓存/venv 排除，保留 22 篇数据）。uvicorn 起服务 + 客户端经 `/mcp` 调用已实测通过。FastMCP Gateway 入口填 `src/mcp_server.py:mcp`。
 >
 > 📄 **许可证：MIT**（见 `LICENSE`）。依赖链全为 MIT/Apache-2.0/BSD 宽松许可，无 GPL/AGPL 传染性。
+>
+> 🚀 **已推 GitHub 并具备上云条件**：`git@github.com:dawu-pj/exam-mcp-server.git`（Public / main，最新 `8c1082d`）。**部署照做见 `部署操作卡.md`**——FastMCP Gateway 网页三步（GitHub 授权→选仓库→Entrypoint 填 `src/mcp_server.py:mcp`），约 60 秒拿 `https://<name>.fastmcp.app/mcp`。已做云端只读文件系统降级 + 双依赖声明 + 放宽 Python 版本，入口经 `fastmcp inspect` 验证 4 工具识别。
 
 ## 最快上手
 
