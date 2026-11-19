@@ -164,7 +164,13 @@ class ResponseCache:
     def __init__(self, cache_dir: Path = CACHE_DIR, ttl: int = CACHE_TTL_SEC):
         self.dir = cache_dir
         self.ttl = ttl
-        self.dir.mkdir(parents=True, exist_ok=True)
+        self.writable = True
+        try:
+            self.dir.mkdir(parents=True, exist_ok=True)
+        except OSError:
+            # Cloud hosts may mount the workspace read-only. Degrade gracefully:
+            # no disk cache, but fetching and querying still work.
+            self.writable = False
 
     def _path(self, url: str) -> Path:
         return self.dir / (hashlib.sha256(url.encode("utf-8")).hexdigest() + ".json")
@@ -183,20 +189,37 @@ class ResponseCache:
             return None
 
     def put(self, url: str, payload: dict) -> None:
+        if not self.writable:
+            return
         data = {**payload, "cached_at": datetime.now(timezone.utc).timestamp()}
-        self._path(url).write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        try:
+            self._path(url).write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        except OSError:
+            self.writable = False
+
+
+_AUDIT_ENABLED = True
 
 
 def audit(event: str, **fields) -> None:
-    """全程留痕：每次抓取/拒绝都记一条 JSONL。"""
-    AUDIT_LOG.parent.mkdir(parents=True, exist_ok=True)
+    """全程留痕：每次抓取/拒绝都记一条 JSONL。
+
+    云端只读文件系统下写日志失败时静默降级，绝不影响工具调用本身。
+    """
+    global _AUDIT_ENABLED
+    if not _AUDIT_ENABLED:
+        return
     row = {
         "ts": datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds"),
         "event": event,
         **fields,
     }
-    with AUDIT_LOG.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    try:
+        AUDIT_LOG.parent.mkdir(parents=True, exist_ok=True)
+        with AUDIT_LOG.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    except OSError:
+        _AUDIT_ENABLED = False
 
 
 # ---------- robots 遵守（RFC9309：4xx 放行 / 5xx 全禁）----------

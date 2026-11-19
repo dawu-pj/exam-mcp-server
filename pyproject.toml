@@ -1,13 +1,22 @@
 [project]
 name = "crawler-mvp"
 version = "0.1.0"
-description = "MVP: 公开静态页采集 -> 正文抽取 -> BM25 检索评估（给大模型供信息）"
-requires-python = ">=3.12,<3.13"
+description = "Exam-info MCP server: compliant scraping -> extraction -> BM25 retrieval for LLMs"
+requires-python = ">=3.11"
+# 与 requirements.txt 完全一致的 pin 版本。FastMCP Gateway 自动读取依赖时，
+# 无论它选择 requirements.txt 还是 pyproject.toml，都能装到同一套版本。
+dependencies = [
+    "scrapy==2.13.3",
+    "trafilatura==2.0.0",
+    "jieba==0.42.1",
+    "rank-bm25==0.2.2",
+    "pydantic==2.14.3",
+    "lxml==6.1.3",
+    "requests==2.34.2",
+    "beautifulsoup4==4.14.3",
+    "twisted==24.11.0",
+    "fastmcp==4.2.2",
+]
 
-[tool.uv]
-python-preference = "only-managed"
-
-[tool.uv.sources]
-
-[project.optional-dependencies]
-dev = []
+# 注意：刻意不设 python-preference="only-managed"。那是本机 uv 的专用配置，
+# 云端 Gateway 若用 uv 解析依赖，only-managed 会因找不到 uv 管理的解释器而失败。
