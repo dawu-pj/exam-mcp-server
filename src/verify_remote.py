@@ -5,7 +5,10 @@
   2. 运行：.venv/Scripts/python.exe src/verify_remote.py
   3. 脚本每 5 秒轮询 token，最多 5 分钟；拿到 token 后自动连线上端点做端到端验证
 
-注意：token 只存内存，不落盘、不入 git。
+注意：
+- token 只存内存，不落盘、不入 git。
+- OAuth 设备码是一次性的：成功换过一次 token 后即作废，无法重复验证。
+  若要再跑，必须重新生成设备码并在网页再次确认授权。
 """
 
 import asyncio
@@ -53,7 +56,12 @@ def poll_token(flow: dict, timeout: int = 300) -> str:
         elif err == "slow_down":
             interval += 2
         elif err == "expired_token":
-            raise RuntimeError("设备码已过期，请重新生成")
+            raise RuntimeError("设备码已过期（未确认超过约 5 分钟），请重新生成")
+        elif err == "invalid_grant":
+            raise RuntimeError(
+                "设备码已失效：OAuth 设备码是一次性的，成功换过一次 token 后即作废，"
+                "不能重复验证。如需再跑，请重新走设备码流程并再次在网页确认授权。"
+            )
         elif err == "access_denied":
             raise RuntimeError("授权被拒绝")
         else:
@@ -83,7 +91,11 @@ async def verify(token: str) -> None:
         print("\n=== 实测 research ===")
         r2 = await c.call_tool("research", {"question": "四六级报名流程", "max_rounds": 2})
         d2 = r2.data
-        print("  资料数:", len(d2.get("资料", [])), "| 站点:", d2.get("覆盖站点"))
+        # 服务端返回结构：{"brief": {"核心发现": [...], "覆盖站点": [...], "资料数量": N}, ...}
+        brief = d2.get("brief", {}) if isinstance(d2, dict) else {}
+        print("  资料数:", brief.get("资料数量"), "| 站点:", brief.get("覆盖站点"))
+        print("  核心发现条数:", len(brief.get("核心发现", [])))
+        print("  检索记录:", d2.get("检索记录") if isinstance(d2, dict) else d2)
 
         print("\n=== 实测 SSRF 拦截（应 DENIED）===")
         r3 = await c.call_tool("fetch_page", {"url": "http://169.254.169.254/latest/meta-data/"})
