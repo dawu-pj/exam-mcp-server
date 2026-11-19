@@ -5,6 +5,8 @@
 > ✅ **状态（2026-11-19）：MVP 闭环 + MCP 工具层 + 部署/日常入口已跑通**——5 站真实采集 22 篇、脱敏去重落盘、BM25 检索评估 Top-1 命中率 100%；MCP Server 4 工具 + 双传输 + 5 层安全闸门全部实测通过。详见 `MVP交付说明.md`、`MCP接入指南.md`（大模型调用）、`部署与日常使用速查.md`（装+用入口）、**`零环境部署指南.md`**（不装 Python，推 GitHub 上云 / 国内云函数 / 便携 exe / WSL2 四条路）。
 >
 > ☁️ **免安装上云已备好**：`app.py`（ASGI 入口，`mcp.http_app(stateless_http=True)`）+ `.gitignore`（缓存/venv 排除，保留 22 篇数据）。uvicorn 起服务 + 客户端经 `/mcp` 调用已实测通过。FastMCP Gateway 入口填 `src/mcp_server.py:mcp`。
+>
+> 📄 **许可证：MIT**（见 `LICENSE`）。依赖链全为 MIT/Apache-2.0/BSD 宽松许可，无 GPL/AGPL 传染性。
 
 ## 最快上手
 
