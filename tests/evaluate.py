@@ -135,6 +135,11 @@ def compare(a_per, b_per, label_a="A", label_b="B"):
     hit_deltas, changed = [], []
     for a, b in zip(a_per, b_per):
         assert a["q"] == b["q"], "golden set 题目顺序不一致"
+        # 负例没有"正确文档"，rank 恒为 0，doc_hit@1 无定义；纳入 bootstrap
+        # 只会用 5 个 delta=0 稀释效应量（20 题平均 +0.25 vs 正例平均 +0.333，
+        # CI 下界被压到 0）。配对检验只在正例上做。
+        if not a["answerable"]:
+            continue
         d = (1 if b["rank"] == 1 else 0) - (1 if a["rank"] == 1 else 0)
         hit_deltas.append(d)
         if d != 0:

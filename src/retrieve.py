@@ -1,5 +1,11 @@
 """BM25 检索层：jieba 中文分词 + 元数据过滤（B3）+ 带出处返回。
 先验 recall@k，不接 embedding（已定 P0-5）。
+
+2026-11-20 字段加权接入：标题/正文分字段 BM25，score = alpha*title + (1-alpha)*body。
+依据：阶段2实验 `tests/evaluate_field_weight.py` —— 预设 alpha=0.3 不显著，
+但敏感性扫描发现 alpha=0.5，经 LOOCV 无偏复核（15/15 次选中、doc_hit@1
+53%→87%、配对 95%CI [+0.067,+0.600] 下界>0）确认有效；负例拒答保持 100%。
+不改接口：search(query, top_k, site) 与 Hit 结构不变，MCP 工具无需改动。
 """
 import json
 import re
@@ -31,7 +37,16 @@ def tokenize(text: str):
 
 
 class BM25Retriever:
-    def __init__(self, data_dir: Path = DATA_DIR):
+    def __init__(self, data_dir: Path = DATA_DIR, alpha: float = 0.5):
+        """alpha: 标题字段权重（0=纯正文；0.5=LOOCV 验证过的最优值）。
+
+        注意 sidecar 的 title 就是 markdown 首行（22/22 篇实测），旧实现
+        `title + markdown` 让标题隐式算 2 遍且被长正文归一化稀释；分字段后
+        标题独立打分，短文档的标题关键词不再淹没在 2 万字正文里。
+        """
+        if not 0.0 <= alpha <= 1.0:
+            raise ValueError(f"alpha 必须在 [0,1]，收到 {alpha}")
+        self.alpha = alpha
         self.docs = []
         for meta_path in sorted(data_dir.glob("*.meta.json")):
             meta = json.loads(meta_path.read_text(encoding="utf-8"))
@@ -41,11 +56,14 @@ class BM25Retriever:
             self.docs.append({**meta, "markdown": md_path.read_text(encoding="utf-8")})
         if not self.docs:
             raise RuntimeError(f"没有清洗后的文档：{data_dir}（先跑 scrapy crawl exam）")
-        self.corpus = [tokenize(d["title"] + " " + d["markdown"]) for d in self.docs]
-        self.bm25 = BM25Okapi(self.corpus)
+        # 两字段各自建索引；body 保留完整 markdown（含首行标题），与基线文本一致，
+        # A/B 唯一差异是「标题是否独立成字段」。
+        self.title_bm25 = BM25Okapi([tokenize(d["title"]) for d in self.docs])
+        self.body_bm25 = BM25Okapi([tokenize(d["markdown"]) for d in self.docs])
 
     def search(self, query: str, top_k: int = 5, site: str | None = None) -> list[Hit]:
-        scores = self.bm25.get_scores(tokenize(query))
+        q = tokenize(query)
+        scores = self.alpha * self.title_bm25.get_scores(q) + (1 - self.alpha) * self.body_bm25.get_scores(q)
         idx_scores = list(enumerate(scores))
         if site:
             idx_scores = [(i, s) for i, s in idx_scores if self.docs[i].get("site_name") == site]
