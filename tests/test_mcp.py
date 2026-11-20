@@ -5,6 +5,7 @@
 - M1 query_local / search_site
 - M3 research 闭环
 - 安全闸门：SSRF（云元数据/localhost）、非白名单域名、非白名单端口必须被拒
+- 全程零外网（no_network 保险：任何意外真实请求立刻失败）
 运行：.venv/Scripts/python.exe tests/test_mcp.py
 """
 import asyncio
@@ -14,9 +15,28 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from fastmcp import Client
 from src.mcp_server import mcp
+from tests.no_network import no_network, UnexpectedNetworkAccess
+
+
+def _selfcheck_no_network():
+    """自检：确认保险真的挂上了（防止 patch 写错却无人发现）。"""
+    import requests
+    try:
+        with no_network():
+            requests.get("https://example.com", timeout=1)
+    except UnexpectedNetworkAccess:
+        return True
+    raise AssertionError("no_network 保险失效：测试期间可能偷跑真实请求")
 
 
 async def main():
+    assert _selfcheck_no_network(), "禁网自检失败"
+    print("[0] 零外网保险自检: OK")
+    with no_network():
+        await _run_cases()
+
+
+async def _run_cases():
     print("=== MCP 端到端测试 ===")
     async with Client(mcp) as c:
         tools = await c.list_tools()

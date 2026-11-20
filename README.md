@@ -25,10 +25,12 @@ powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一�
 ```powershell
 .\.venv\Scripts\python.exe src\mcp_server.py --transport streamable-http --host 0.0.0.0 --port 8765   # 远程大模型（主方案）
 .\.venv\Scripts\python.exe src\mcp_server.py --transport stdio                                        # 本机客户端
-.\.venv\Scripts\python.exe tests\test_mcp.py                                                          # MCP 端到端测试
+.\.venv\Scripts\python.exe tests\test_mcp.py                                                          # MCP 工具测试（本地闭环·零外网）
 ```
 
 4 个工具：`query_local` / `search_site` / `fetch_page`（受控实时抓取）/ `research`（多轮调研闭环）。你的大模型不在本机 → 用 streamable-http 挂载，配置示例与安全边界见 `MCP接入指南.md`。
+
+> **测试零外网保险**：`tests/test_mcp.py` 全程用 `tests/no_network.py` 的 `no_network()` 包裹——任何意外的真实 HTTP 请求会立刻失败（借鉴 13ft 源码，改用 context manager 封装）。自检确认 4 工具 + 4 类 SSRF 拦截都不需要联网；真正联网的只有 `src/verify_remote.py`（线上 OAuth 验证）。
 
 ## 一键复现
 
