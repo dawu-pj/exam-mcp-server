@@ -1,0 +1,130 @@
+{
+  "probed_at": "2026-11-20 15:33:26",
+  "existing_docs": 22,
+  "sites": [
+    {
+      "site": "中国教育考试网",
+      "home": "https://www.neea.edu.cn/",
+      "error": null,
+      "total_article_links": 15,
+      "new_candidates": [
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2504/105-1.htm",
+          "text": "教育部教育考试院关于申报2025年度国家教育考试科研规划课题的公告"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1705/2929-1.htm",
+          "text": "国家教育考试"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1705/2935-1.htm",
+          "text": "社会证书考试"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/folder/16013/15-1.htm",
+          "text": "中小学教师资格考试"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/folder/2205/1796-1.htm",
+          "text": "中小学教师资格考试(NTCE)"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/folder/21033/658-1.htm",
+          "text": "全国大学英语四、六级考试(CET)"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/folder/22014/5516-1.htm",
+          "text": "全国计算机等级考试(NCRE)"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/folder/2404/1085-1.htm",
+          "text": "全国计算机应用水平考试(NIT)"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/2506/30-1.htm",
+          "text": "书画等级考试(CCPT)  >"
+        }
+      ],
+      "http_status": 200,
+      "encoding": "utf-8"
+    },
+    {
+      "site": "四六级考试网",
+      "home": "https://cet.neea.edu.cn/",
+      "error": null,
+      "total_article_links": 3,
+      "new_candidates": [],
+      "http_status": 200,
+      "encoding": "utf-8"
+    },
+    {
+      "site": "研招网",
+      "home": "https://yz.chsi.com.cn/",
+      "error": null,
+      "total_article_links": 15,
+      "new_candidates": [
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261014/2293980625.html",
+          "text": "华南理工大学工商管理学院最新招生信息"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261029/2293983776.html",
+          "text": "上海交通大学上海高级金融学院2027级MBA招生简章"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/fstj/202603/20260324/2293453995.html",
+          "text": "新疆大学2026年全国硕士研究生招生考试复试..."
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/fstj/202603/20260324/2293453977.html",
+          "text": "中国海洋大学2026年硕士研究生招生考试复试..."
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zsjz/tmjz/202606/20260626/2293847864.html",
+          "text": "清华大学经管学院2027年硕士推免最新通知"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zsjz/202609/20260930/2293976027.html",
+          "text": "嘉兴大学2027年硕士研究生招生简章"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zsjz/202609/20260930/2293976019.html",
+          "text": "西北民族大学2027年硕士研究生招生简章"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zsjz/202603/20260302/2293449679.html",
+          "text": "哈尔滨理工大学2026年博士研究生招生简章"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zsjz/202510/20251011/2293437456.html",
+          "text": "湖北文理学院2026年硕士研究生招生简章"
+        }
+      ],
+      "http_status": 200,
+      "encoding": "utf-8"
+    },
+    {
+      "site": "NCRE考试网",
+      "home": "https://ncre.neea.edu.cn/",
+      "error": null,
+      "total_article_links": 3,
+      "new_candidates": [],
+      "http_status": 200,
+      "encoding": "utf-8"
+    },
+    {
+      "site": "中国教育在线",
+      "home": "https://www.eol.cn/",
+      "error": null,
+      "total_article_links": 4,
+      "new_candidates": [
+        {
+          "url": "https://www.eol.cn/news/dongtai/gxrs/202611/t20261120_2796970.shtml",
+          "text": "北京信息科技大学领导班子调整"
+        }
+      ],
+      "http_status": 200,
+      "encoding": "utf-8"
+    }
+  ]
+}

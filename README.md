@@ -35,13 +35,15 @@ powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一�
 ```powershell
 .\.venv\Scripts\python.exe src\selftest.py                    # 链路自检
 .\.venv\Scripts\python.exe -m scrapy crawl exam               # 真实采集（限速约 20 秒）
-.\.venv\Scripts\python.exe tests\evaluate.py                  # 检索评估
+.\.venv\Scripts\python.exe tests\evaluate.py                  # 检索评估（主集 20 题）
+.\.venv\Scripts\python.exe tests\evaluate_field_weight.py      # 字段加权 A/B + LOOCV 复核
+.\.venv\Scripts\python.exe tests\validate_alpha_holdout.py     # alpha 独立复核（holdout 18 题）
 .\.venv\Scripts\python.exe src\retrieve.py "四六级报名"        # 手动查询
 ```
 
 > 语言决策已收敛：Python + 本机（`Go技术栈可行性修正报告.md` 中的 Go 方案已被用户否决，仅作推演记录）。
 > 设计依据：`../爬虫项目立项调研报告.md`、`../GitHub开源项目调研与选型报告.md`、`../爬虫行业100关键词认知框架.md`、`../MVP开工确认清单.md`。
-> **阶段 2 已实施（2026-11-20）**：`阶段2调研与实施方案.md`——五路一手调研 + 用户拍板后落地，另追加字段加权实验。golden set 5→20 题、evaluate.py 升级文档级指标（暴露站点 80% vs 文档 Top-1 53% 的虚高，gap +27%）；**BM25 标题/正文分字段加权（alpha=0.5）经 LOOCV 无偏复核确认有效，Top-1 53%→87% 已接入主链路**；5 站重访前提实测（3 站支持 ETag+304）；embedding 技术储备（本地 bge-small-zh 独立模块，实测 CI 跨 0 不显著，未接主链路）。Q1 分块/Q2 混合检索按裁定未做。
+> **阶段 2 已实施（2026-11-20）**：`阶段2调研与实施方案.md`——五路一手调研 + 用户拍板后落地，另追加字段加权实验与 alpha 独立复核。golden set 5→20 题、evaluate.py 升级文档级指标（暴露站点 80% vs 文档 Top-1 53% 的虚高，gap +27%）；**BM25 标题/正文分字段加权（alpha=0.5）经"LOOCV + 独立 holdout 18 题"两层复核确认有效，Top-1 53%→87%（holdout 93%），已接入主链路**；5 站重访前提实测（3 站支持 ETag+304）；embedding 技术储备（本地 bge-small-zh 独立模块，实测 CI 跨 0 不显著，未接主链路）。扩文档到 50 篇经探测证据否决（新候选多为导航垃圾，堆量反损）。Q1 分块/Q2 混合检索按裁定未做。
 
 ## 环境状态（2026-11-19 实测就绪）
 
@@ -111,17 +113,20 @@ crawler-mvp/
 │   ├── selftest.py     链路自检（已通过）
 │   ├── probe_sites.py  站点+robots 探测
 │   ├── probe_articles.py  内页正文探测
+│   ├── probe_expansion.py  扩量空间探测（GBK 编码修正，证据否决堆量）
 │   ├── retrieve.py     BM25 检索 + 出处（主链路，标题/正文分字段 alpha=0.5）
 │   ├── field_weighted.py  字段加权实验入口（薄封装，复用主链路）
 │   └── embedding_research.py  阶段2技术储备：本地 bge-small-zh 独立实测（不接主链路）
 ├── data/
 │   ├── clean/          22 组 Markdown + sidecar（已采集）
 │   ├── probe_report.json / article_probe_report.json  站点探测留痕
-│   └── bm25_baseline.json / field_weighted_main.json / field_weighted_alpha03.json / embedding_research.json / revisit_probe.json  阶段2实测留痕
+│   └── bm25_baseline.json / field_weighted_main.json / field_weighted_alpha03.json / holdout_alpha_validation.json / expansion_probe.json / embedding_research.json / revisit_probe.json  阶段2实测留痕
 ├── tests/
 │   ├── golden_set.json 20 个真实问题（6 exact/5 paraphrase/4 multi/5 负例，含文档级标注）
+│   ├── holdout_set.json 18 题独立复核集（未参与 alpha 选择，15 正/3 负）
 │   ├── evaluate.py     文档级评估 v2（doc_hit@1/@3、mrr@5、拒答代理、配对 bootstrap 检验）
-│   └── evaluate_field_weight.py  字段加权 A/B + LOOCV 无偏复核
+│   ├── evaluate_field_weight.py  字段加权 A/B + LOOCV 无偏复核
+│   └── validate_alpha_holdout.py  alpha 独立复核（holdout 18 题扫全部 alpha）
 ├── requirements-research.txt  本地技术储备依赖（fastembed/onnxruntime，不上云端）
 ├── MVP交付说明.md       完整交付与 8 盲区核验
 ├── 阶段2调研与实施方案.md  五路调研 + 实施记录（本阶段核心文档）

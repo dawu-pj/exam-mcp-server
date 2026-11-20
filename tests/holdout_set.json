@@ -1,0 +1,200 @@
+[
+  {
+    "q": "2026年9月计算机等级考试开考几个科目",
+    "expect_site": "NCRE考试网",
+    "expect_keywords": ["26个科目", "4个级别"],
+    "expect_doc_id": "283564b9066abfdc",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "holdout：正文细节（开考科目数），原20题问的是考试时间"
+  },
+  {
+    "q": "NCRE报名一般从哪天开始",
+    "expect_site": "NCRE考试网",
+    "expect_keywords": ["报名时间"],
+    "expect_doc_id": "283564b9066abfdc",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "medium",
+    "note": "holdout：口语化问报名时间"
+  },
+  {
+    "q": "大学英语六级笔试12月12日举行是哪一年下半年",
+    "expect_site": "四六级考试网",
+    "expect_keywords": ["12月12日", "2026年下半年"],
+    "expect_doc_id": "837ace5d4cc97acf",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "holdout：反向问法（给日期问期次），同站有上半年报名/成绩两篇"
+  },
+  {
+    "q": "四六级口试安排在11月21到22日的是哪次考试",
+    "expect_site": "四六级考试网",
+    "expect_keywords": ["口试", "11月21"],
+    "expect_doc_id": "837ace5d4cc97acf",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "holdout：口试日期定位，同站多篇易混"
+  },
+  {
+    "q": "四六级成绩查询服务8月24日开通",
+    "expect_site": "四六级考试网",
+    "expect_keywords": ["8月24日", "成绩查询"],
+    "expect_doc_id": "a50468394131c824",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "medium",
+    "note": "holdout：原20题问成绩查询，此为日期细节版"
+  },
+  {
+    "q": "2026上半年英语六级成绩几号能查",
+    "expect_site": "四六级考试网",
+    "expect_keywords": ["8月24日"],
+    "expect_doc_id": "a50468394131c824",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "medium",
+    "note": "holdout：口语化成绩查询"
+  },
+  {
+    "q": "考研报名人数从474万峰值下降了多少",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["474万", "131万"],
+    "expect_doc_id": "a41094516983eb47",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "hard",
+    "note": "holdout：正文细节推导，原20题问的是报名人数本身"
+  },
+  {
+    "q": "江苏省2027年研究生招生工作会议谁出席",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["孙洪山", "杜章彪"],
+    "expect_doc_id": "d30f418ee097340d",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "holdout：正文人物细节；注意标题写江西、正文写江苏（源站数据质量问题，按正文标注）"
+  },
+  {
+    "q": "2026年考研管理规定文号是教学几号",
+    "expect_site": "研招网",
+    "expect_keywords": ["教学", "2025", "2号"],
+    "expect_doc_id": "8a829623c0eeda71",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "holdout：2026版文号；同站有2027版（教学2026 2号）近似干扰，基线rank=2，保留为hard诊断"
+  },
+  {
+    "q": "2025年教育考试科研课题申报公告哪天发布",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["2026-04-13", "申报"],
+    "expect_doc_id": "f8757d2502bebd4d",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "medium",
+    "note": "holdout：注意标题写2026年度、题问2025年（发布年份），按文档标注；同站多篇课题公告"
+  },
+  {
+    "q": "教育考试科研项目选题征集截止到什么时候",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["选题", "征集"],
+    "expect_doc_id": "4b13cc4acf0d1cf5",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "medium",
+    "note": "holdout：选题征集通知，与立项/公示/申报多篇同站"
+  },
+  {
+    "q": "2026年度课题拟立项名单公示期到9月2日",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["公示期", "9月2日"],
+    "expect_doc_id": "889c38e1bfd3cfaf",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "holdout：2026拟立项公示，与2025公示(6b4ac648)、正式立项(0346e666)同站近似"
+  },
+  {
+    "q": "2025年度课题拟立项公示期是哪几天",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["8月25日", "8月29日"],
+    "expect_doc_id": "6b4ac6481069e06b",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "holdout：2025拟立项公示，与2026公示(889c38e1)跨年度区分"
+  },
+  {
+    "q": "工信部2026年科学技术支出预算增长多少",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["科学技术支出", "49.51%"],
+    "expect_doc_id": "4558d63079c0b16a",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "medium",
+    "note": "holdout：正文数字细节，原20题问的是部门预算整体"
+  },
+  {
+    "q": "高校毕业生求职就业信息平台有哪些",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["招聘", "就业"],
+    "expect_doc_id": "f920da6b658a7856",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "holdout：原20题问法不同（可以参考哪些平台）"
+  },
+  {
+    "q": "2028年计算机等级考试报名什么时候开始",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "holdout负例：库里只有2026年NCRE"
+  },
+  {
+    "q": "2024年下半年四六级报名时间",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "medium",
+    "note": "holdout负例：库里只有2026上/下半年"
+  },
+  {
+    "q": "北京市2027年考研报名人数统计",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "medium",
+    "note": "holdout负例：库里只有江西/全国数据"
+  }
+]
