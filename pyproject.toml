@@ -17,6 +17,10 @@ dependencies = [
     "twisted==24.11.0",
     "fastmcp==4.2.2",
 ]
+# 注意：fastembed/onnxruntime 等 embedding 技术储备依赖刻意不列入此处——
+# 它们只被本地 src/embedding_research.py 使用，不接主链路；
+# 列进 pyproject 会让 FastMCP Gateway 云端部署白装 17MB 的 onnxruntime。
+# 本地跑技术储备时单独装：uv pip install --python .venv/Scripts/python.exe -r requirements-research.txt
 
 # 注意：刻意不设 python-preference="only-managed"。那是本机 uv 的专用配置，
 # 云端 Gateway 若用 uv 解析依赖，only-managed 会因找不到 uv 管理的解释器而失败。

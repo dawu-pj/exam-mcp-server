@@ -16,3 +16,6 @@ beautifulsoup4==4.14.3
 twisted==24.11.0
 # MCP 层：FastMCP 2026-11-19 实测 4.2.2（内含 mcp 2.3.0），双传输 stdio/streamable-http
 fastmcp==4.2.2
+# 注：embedding 技术储备依赖（fastembed/onnxruntime 等）刻意不列此处——
+# 本文件会被 FastMCP Gateway 云端读取，云端不用该模块，避免白装 17MB onnxruntime。
+# 本地实测请装 requirements-research.txt。

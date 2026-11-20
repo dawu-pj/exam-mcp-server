@@ -1,0 +1,75 @@
+{
+  "probe_time": "2026-11-20T09:58:00+08:00",
+  "method": "每站 1 次 GET 取响应头（限速 1 秒）；HEAD 探测因 WAF 拦截放弃；1 站追加 1 次 If-None-Match 验证 304",
+  "note": "合规：明示 UA、每域请求数≤3、1 秒间隔、不绕 WAF（HEAD 403 即改 GET，不换指纹）",
+  "sites": [
+    {
+      "site": "中国教育考试网",
+      "url": "https://www.neea.edu.cn/",
+      "head_method": "403 Forbidden (openresty WAF)",
+      "get_status": 200,
+      "etag": "\"6afba5d4-109d7\"",
+      "last_modified": "Tue, 17 Nov 2026 00:54:44 GMT",
+      "cache_control": "no-store",
+      "sitemap_xml": 404,
+      "conditional_304_verified": null,
+      "implication": "ETag + Last-Modified 可用；无 sitemap；条件请求可行但未逐站验证 304"
+    },
+    {
+      "site": "四六级考试网",
+      "url": "https://cet.neea.edu.cn/",
+      "head_method": "403 Forbidden (openresty WAF)",
+      "get_status": 200,
+      "etag": "\"6a9a802c-56f6\"",
+      "last_modified": "Fri, 04 Sep 2026 08:24:12 GMT",
+      "cache_control": "no-store",
+      "sitemap_xml": 404,
+      "conditional_304_verified": true,
+      "implication": "ETag + Last-Modified 可用；实测 If-None-Match 返回 304 Not Modified；无 sitemap"
+    },
+    {
+      "site": "研招网",
+      "url": "https://yz.chsi.com.cn/",
+      "head_method": "200 (无 ETag/Last-Modified)",
+      "get_status": 200,
+      "etag": null,
+      "last_modified": null,
+      "cache_control": "no-cache, no-store, max-age=0, must-revalidate",
+      "sitemap_xml": 200,
+      "conditional_304_verified": null,
+      "implication": "无校验器，条件请求不可用→退化为全量 GET + content_fingerprint 判变；有 sitemap.xml 可做新增/消失发现"
+    },
+    {
+      "site": "NCRE考试网",
+      "url": "https://ncre.neea.edu.cn/",
+      "head_method": "403 Forbidden (openresty WAF)",
+      "get_status": 200,
+      "etag": "\"6af272ee-504d\"",
+      "last_modified": "Tue, 10 Nov 2026 01:27:10 GMT",
+      "cache_control": "no-store",
+      "sitemap_xml": 404,
+      "conditional_304_verified": null,
+      "implication": "ETag + Last-Modified 可用；无 sitemap；条件请求可行但未逐站验证 304"
+    },
+    {
+      "site": "中国教育在线",
+      "url": "https://www.eol.cn/",
+      "head_method": "200 (无 ETag/Last-Modified)",
+      "get_status": 200,
+      "etag": null,
+      "last_modified": null,
+      "cache_control": "max-age=120",
+      "sitemap_xml": 404,
+      "conditional_304_verified": null,
+      "implication": "无校验器、无 sitemap，条件请求与 sitemap 发现均不可用→只能全量比对指纹"
+    }
+  ],
+  "summary": {
+    "etag_support": "3/5（neea 三站）",
+    "last_modified_support": "3/5（neea 三站）",
+    "conditional_304_confirmed": "1/1 实测（cet.neea.edu.cn），其余 2 站未逐站验证",
+    "sitemap_support": "1/5（研招网）",
+    "head_method_blocked": "3/5（neea 三站 403 openresty WAF）→ 重访必须用 GET，不绕 WAF",
+    "b2_decision": "条件请求对 3 站可行（省带宽），但对限速约束收益有限；研招网可用 sitemap 做发现；eol 只能全量指纹比对。维持手动 recheck 裁定，条件请求作为可选加速。"
+  }
+}

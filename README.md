@@ -41,6 +41,7 @@ powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一�
 
 > 语言决策已收敛：Python + 本机（`Go技术栈可行性修正报告.md` 中的 Go 方案已被用户否决，仅作推演记录）。
 > 设计依据：`../爬虫项目立项调研报告.md`、`../GitHub开源项目调研与选型报告.md`、`../爬虫行业100关键词认知框架.md`、`../MVP开工确认清单.md`。
+> **阶段 2 已实施（2026-11-20）**：`阶段2调研与实施方案.md`——五路一手调研 + 用户拍板后落地。golden set 5→20 题、evaluate.py 升级文档级指标（站点 80% vs 文档 Top-1 53%，gap +27%）、5 站重访前提实测（3 站支持 ETag+304）、embedding 技术储备（本地 bge-small-zh 独立模块，实测 CI 跨 0 不显著，未接主链路）。Q1 分块/Q2 混合检索按裁定未做。
 
 ## 环境状态（2026-11-19 实测就绪）
 
@@ -110,17 +111,20 @@ crawler-mvp/
 │   ├── selftest.py     链路自检（已通过）
 │   ├── probe_sites.py  站点+robots 探测
 │   ├── probe_articles.py  内页正文探测
-│   └── retrieve.py     BM25 检索 + 出处
+│   ├── retrieve.py     BM25 检索 + 出处（主链路，100% 基线不变）
+│   └── embedding_research.py  阶段2技术储备：本地 bge-small-zh 独立实测（不接主链路）
 ├── data/
 │   ├── clean/          22 组 Markdown + sidecar（已采集）
-│   ├── probe_report.json / article_probe_report.json  探测留痕
-│   └── httpcache/      HTTP 缓存
+│   ├── probe_report.json / article_probe_report.json  站点探测留痕
+│   └── bm25_baseline.json / embedding_research.json / revisit_probe.json  阶段2实测留痕
 ├── tests/
-│   ├── golden_set.json 5 个真实问题评估集
-│   └── evaluate.py     recall@k 评估脚本
+│   ├── golden_set.json 20 个真实问题（6 exact/5 paraphrase/4 multi/5 负例，含文档级标注）
+│   └── evaluate.py     文档级评估 v2（doc_hit@1/@3、mrr@5、拒答代理、配对 bootstrap 检验）
+├── requirements-research.txt  本地技术储备依赖（fastembed/onnxruntime，不上云端）
 ├── MVP交付说明.md       完整交付与 8 盲区核验
+├── 阶段2调研与实施方案.md  五路调研 + 实施记录（本阶段核心文档）
 ├── 考试站点实测选型结论.md
 ├── pyproject.toml      uv 项目配置
-├── requirements.txt    pin 死版本依赖清单
+├── requirements.txt    pin 死版本依赖清单（主链路，云端 Gateway 读此文件）
 └── README.md           本文件
 ```

@@ -1,0 +1,35 @@
+{
+  "paired_test": {
+    "improved": 5,
+    "regressed": 4,
+    "mean_delta": 0.0667,
+    "ci95": [
+      -0.3333,
+      0.4667
+    ],
+    "verdict": "CI跨0·不显著·维持BM25"
+  },
+  "model": "BAAI/bge-small-zh-v1.5",
+  "dim": 512,
+  "cold_start_sec": 5.23,
+  "index_sec": 3.11,
+  "query_ms": 14.1,
+  "bm25": {
+    "doc_hit@1": 0.5333333333333333,
+    "doc_hit@3": 0.9333333333333333
+  },
+  "dense": {
+    "doc_hit@1": 0.6,
+    "doc_hit@3": 0.9333333333333333
+  },
+  "pos_sim_range": [
+    0.532,
+    0.805
+  ],
+  "neg_sim_range": [
+    0.4929,
+    0.7401
+  ],
+  "score_overlap": true,
+  "conclusion": "dense 单独未超过 BM25 → 维持阶段2'不接 embedding'裁定；本模块仅作技术储备，不接入主链路。"
+}

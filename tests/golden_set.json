@@ -3,30 +3,220 @@
     "q": "2026年下半年全国大学英语四、六级考试什么时候报名？",
     "expect_site": "四六级考试网",
     "expect_keywords": ["报名", "四、六级", "2026"],
-    "note": "来自实测抓到的《2026年下半年全国大学英语四、六级考试报名工作启动》"
+    "expect_doc_id": "837ace5d4cc97acf",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "原 golden set 题1；四六级站有上/下半年两篇报名公告，此题指下半年"
   },
   {
     "q": "2026年9月全国计算机等级考试NCRE的考试时间是什么时候？",
     "expect_site": "NCRE考试网",
     "expect_keywords": ["NCRE", "9月19", "考试"],
-    "note": "来自实测抓到的《2026年9月全国计算机等级考试报名工作启动》"
+    "expect_doc_id": "283564b9066abfdc",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "原 golden set 题2；NCRE 站有4篇但仅此篇含正文，其余为导航页"
   },
   {
     "q": "2027年全国硕士研究生招生考试安全工作视频会讲了什么？",
     "expect_site": "研招网",
     "expect_keywords": ["研究生招生考试", "安全工作", "2027"],
-    "note": "来自实测抓到的研招网公告"
+    "expect_doc_id": "b8d0bd3f6132b576",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "原 golden set 题3"
   },
   {
-    "q": "2026年度国家教育考试科研规划课题立项名单公布了吗？",
-    "expect_site": "中国教育考试网",
-    "expect_keywords": ["科研规划课题", "立项", "2026"],
-    "note": "来自实测抓到的中国教育考试网公告"
+    "q": "2027年全国硕士研究生考试报名人数是多少？",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["347万", "报名人数", "2027"],
+    "expect_doc_id": "a41094516983eb47",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "该文档含具体数字347万，验证数字型精确匹配"
   },
   {
     "q": "高校毕业生求职可以参考哪些就业信息平台？",
     "expect_site": "中国教育在线",
     "expect_keywords": ["就业信息平台", "求职"],
-    "note": "来自实测抓到的中国教育在线资讯"
+    "expect_doc_id": "f920da6b658a7856",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "原 golden set 题5"
+  },
+  {
+    "q": "教育部对2027年全国硕士研究生考试招生工作做了什么部署？",
+    "expect_site": "研招网",
+    "expect_keywords": ["部署", "2027", "招生"],
+    "expect_doc_id": "5ba7f527766892d4",
+    "query_type": "exact",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "研招网《教育部部署2027年全国硕士研究生考试招生工作》"
+  },
+  {
+    "q": "今年上半年六级什么时候开始报名啊？",
+    "expect_site": "四六级考试网",
+    "expect_keywords": ["上半年", "报名", "六级"],
+    "expect_doc_id": "b199c00ecee6b0bf",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "口语化改写；同站三篇（上半年报名/下半年报名/成绩查询），站点命中无法区分"
+  },
+  {
+    "q": "2026年上半年四六级考试成绩什么时候能查？",
+    "expect_site": "四六级考试网",
+    "expect_keywords": ["成绩查询", "8月24"],
+    "expect_doc_id": "a50468394131c824",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "'能查'替代'成绩查询'；同站易与两篇报名公告混淆"
+  },
+  {
+    "q": "2027年江西考研报名有多少人？",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["江西", "11.25万", "2027"],
+    "expect_doc_id": "d30f418ee097340d",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "简称'考研'替代'硕士研究生招生考试'；标题写江西但正文首句写江苏，检查抽取一致性"
+  },
+  {
+    "q": "工信部2026年的部门预算公布了吗？",
+    "expect_site": "中国教育在线",
+    "expect_keywords": ["工信部", "部门预算", "2026"],
+    "expect_doc_id": "4558d63079c0b16a",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": false,
+    "difficulty": "easy",
+    "note": "'工信部'别称替代'工业和信息化部'"
+  },
+  {
+    "q": "教育考试院2026年度科研课题怎么申报？",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["申报", "科研规划课题", "2026"],
+    "expect_doc_id": "f8757d2502bebd4d",
+    "query_type": "paraphrase",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "同站科研课题系列公告5篇（申报/选题/拟立项/立项，跨2025-2026），站点命中几乎无区分力"
+  },
+  {
+    "q": "2026年度国家教育考试科研规划课题正式立项名单公布了吗？",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["立项名单", "2026", "公布"],
+    "expect_doc_id": "0346e666a4d0e849",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "关键陷阱：同站另有889c38e1《2026年度拟立项名单公示》，'拟立项公示'≠'正式立项名单'；实测BM25 Top1 恰是错的889c38e1"
+  },
+  {
+    "q": "2025年度国家教育考试科研规划课题正式立项名单是哪些？",
+    "expect_site": "中国教育考试网",
+    "expect_keywords": ["立项名单", "2025", "批准号"],
+    "expect_doc_id": "60eda603e52fc57f",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "关键陷阱：同站另有6b4ac648《2025年度拟立项名单公示》，'拟立项'≠'正式立项'；实测BM25 Top1 恰是错的6b4ac648"
+  },
+  {
+    "q": "2027年全国硕士研究生招生工作管理规定的文号是什么？",
+    "expect_site": "研招网",
+    "expect_keywords": ["教学", "2026", "2号"],
+    "expect_doc_id": "d6d1e9575e010196",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "长文档测试：正文2万字，实测BM25 Top1/3 全是'首页'导航页，正确文档未进前3——IDF归一化惩罚长文档"
+  },
+  {
+    "q": "教学〔2025〕2号文件是关于什么的？",
+    "expect_site": "研招网",
+    "expect_keywords": ["2026", "招生工作管理规定", "教学"],
+    "expect_doc_id": "8a829623c0eeda71",
+    "query_type": "multi_condition",
+    "expect_answerable": true,
+    "site_trap": true,
+    "difficulty": "hard",
+    "note": "文号反查；与d6d1e957（2027版，教学〔2026〕2号）同站同系列，验证精确编号区分"
+  },
+  {
+    "q": "教师资格证考试什么时候报名？",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "hard",
+    "note": "负例：库里无任何教师资格类公告。正确行为=拒答或明确说'库内无相关公告'，不得硬凑研招管理规定"
+  },
+  {
+    "q": "雅思考试2026年的报名条件是什么？",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "hard",
+    "note": "负例：库里无语言类考试公告"
+  },
+  {
+    "q": "2028年全国硕士研究生考试报名人数是多少？",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "hard",
+    "note": "负例：年份越界，库里最新为2027年数据；验证系统不被'报名人数'关键词骗到"
+  },
+  {
+    "q": "法律职业资格考试的主观题时间是什么时候？",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "hard",
+    "note": "负例：库里无法律职业资格类公告（该类站点此前因WAF已剔除）"
+  },
+  {
+    "q": "2024年度国家教育考试科研规划课题立项名单？",
+    "expect_site": null,
+    "expect_keywords": [],
+    "expect_doc_id": null,
+    "query_type": "negative",
+    "expect_answerable": false,
+    "site_trap": false,
+    "difficulty": "hard",
+    "note": "负例：年份越界，库里科研课题仅2025/2026年度；验证不被'科研规划课题立项名单'关键词骗到"
   }
 ]
