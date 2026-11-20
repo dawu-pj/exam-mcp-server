@@ -1,0 +1,2321 @@
+{
+  "probed_at": "2026-11-20 16:03:09",
+  "existing_docs": 22,
+  "sites": [
+    {
+      "site": "中国教育考试网",
+      "columns": [
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-1.htm",
+          "http": 200,
+          "article_links": 24
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-1.htm",
+          "http": 200,
+          "article_links": 25
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/",
+          "http": 200,
+          "article_links": 5
+        }
+      ],
+      "new_candidates": [
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-1.htm",
+          "title": "考试资讯",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-1.htm",
+          "title": "公示公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2611/25-1.htm",
+          "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2609/73-1.htm",
+          "title": "教育部部署2027年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2609/40-1.htm",
+          "title": "教育部部署2026年全国成人高校招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2609/36-1.htm",
+          "title": "教育部办公厅关于做好2026年全国成人高校招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2606/14-1.htm",
+          "title": "怀进鹏视频调度2026年全国高考组织工作",
+          "looks": "archive"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2606/5-1.htm",
+          "title": "教育部会同有关部门启动实施“2026年高考护航行动”",
+          "looks": "archive"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2606/3-1.htm",
+          "title": "教育部发布2026年高考预警信息",
+          "looks": "archive"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2604/144-1.htm",
+          "title": "2026年全国普通高校招生考试安全工作视频会议召开",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2601/60-1.htm",
+          "title": "教育部部署做好2026年普通高校招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2512/23-1.htm",
+          "title": "教育部公布2026年全国硕士研究生招生考试违法违规行为举报电话",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2512/7-1.htm",
+          "title": "2026年面向香港、澳门、台湾地区研究生招生考试《综合能力（一）考试指南》<br>《综合能力（二）考试指南》正式公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2511/127-1.htm",
+          "title": "教育部部署2026年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2511/121-1.htm",
+          "title": "教育部教育考试院2026年度统一公开招聘公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2509/58-1.htm",
+          "title": "教育部部署2026年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2509/43-1.htm",
+          "title": "教育部办公厅关于做好2025年全国成人高校招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-2.htm",
+          "title": "2",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-3.htm",
+          "title": "3",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-4.htm",
+          "title": "4",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-5.htm",
+          "title": "5",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-6.htm",
+          "title": "6",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-7.htm",
+          "title": "7",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-8.htm",
+          "title": "8",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2504/105-1.htm",
+          "title": "教育部教育考试院关于申报2025年度国家教育考试科研规划课题的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2412/155-1.htm",
+          "title": "关于征集2025年度教育考试科研项目选题的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2409/54-1.htm",
+          "title": "“教育部教育考试院——英国文化教育协会 英语测评科研课题”<br>第二批课题结题鉴定结果公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2409/15-1.htm",
+          "title": "2024年度国家教育考试科研规划课题立项名单公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2408/86-1.htm",
+          "title": "关于2024年度国家教育考试科研规划课题拟立项名单的公示",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2405/246-1.htm",
+          "title": "教育部教育考试院关于申报2024年度国家教育考试科研规划课题的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2404/1108-1.htm",
+          "title": "教育部教育考试院2024年（第二季度）短信通信服务成交公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2404/703-1.htm",
+          "title": "教育部教育考试院2024年高考资源收集解析项目成交公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/report/2404/691-1.htm",
+          "title": "教育部教育考试院2024年（第二季度）短信通信服务比选公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-2.htm",
+          "title": "2",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-3.htm",
+          "title": "3",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-4.htm",
+          "title": "4",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-5.htm",
+          "title": "5",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-6.htm",
+          "title": "6",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-7.htm",
+          "title": "7",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-8.htm",
+          "title": "8",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-9.htm",
+          "title": "9",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-10.htm",
+          "title": "10",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-12.htm",
+          "title": "最后",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1705/2929-1.htm",
+          "title": "国家教育考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1705/2935-1.htm",
+          "title": "社会证书考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1705/2957-1.htm",
+          "title": "海外考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/1705/2978-1.htm",
+          "title": "其它",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.neea.edu.cn/html1/category/2506/30-1.htm",
+          "title": "补办证书",
+          "looks": "title"
+        }
+      ],
+      "errors": [],
+      "summary": {
+        "total_new": 48,
+        "title_confirmed": 27,
+        "archive_unverified": 3
+      }
+    },
+    {
+      "site": "四六级考试网",
+      "columns": [
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-1.htm",
+          "http": 200,
+          "article_links": 23
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/",
+          "http": 200,
+          "article_links": 12
+        }
+      ],
+      "new_candidates": [
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-1.htm",
+          "title": "考试资讯",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2611/25-1.htm",
+          "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2609/73-1.htm",
+          "title": "教育部部署2027年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2609/40-1.htm",
+          "title": "教育部部署2026年全国成人高校招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2609/36-1.htm",
+          "title": "教育部办公厅关于做好2026年全国成人高校招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2606/14-1.htm",
+          "title": "怀进鹏视频调度2026年全国高考组织工作",
+          "looks": "archive"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2606/5-1.htm",
+          "title": "教育部会同有关部门启动实施“2026年高考护航行动”",
+          "looks": "archive"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2606/3-1.htm",
+          "title": "教育部发布2026年高考预警信息",
+          "looks": "archive"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2604/144-1.htm",
+          "title": "2026年全国普通高校招生考试安全工作视频会议召开",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2601/60-1.htm",
+          "title": "教育部部署做好2026年普通高校招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2512/23-1.htm",
+          "title": "教育部公布2026年全国硕士研究生招生考试违法违规行为举报电话",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2512/7-1.htm",
+          "title": "2026年面向香港、澳门、台湾地区研究生招生考试《综合能力（一）考试指南》<br>《综合能力（二）考试指南》正式公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2511/127-1.htm",
+          "title": "教育部部署2026年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2511/121-1.htm",
+          "title": "教育部教育考试院2026年度统一公开招聘公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2509/58-1.htm",
+          "title": "教育部部署2026年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2509/43-1.htm",
+          "title": "教育部办公厅关于做好2025年全国成人高校招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-2.htm",
+          "title": "2",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-3.htm",
+          "title": "3",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-4.htm",
+          "title": "4",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-5.htm",
+          "title": "5",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-6.htm",
+          "title": "6",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-7.htm",
+          "title": "7",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-8.htm",
+          "title": "8",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/1508/151-1.htm",
+          "title": "公示公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2609/27-1.htm",
+          "title": "2026年度国家教育考试科研规划课题立项名单公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2608/25-1.htm",
+          "title": "关于2026年度国家教育考试科研规划课题拟立项名单的公示",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2604/99-1.htm",
+          "title": "教育部教育考试院关于申报2026年度国家教育考试科研规划课题的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2512/20-1.htm",
+          "title": "关于征集2026年度教育考试科研项目选题的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2509/4-1.htm",
+          "title": "2025年度国家教育考试科研规划课题立项名单公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2508/14-1.htm",
+          "title": "关于2025年度国家教育考试科研规划课题拟立项名单的公示",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/report/2504/105-1.htm",
+          "title": "教育部教育考试院关于申报2025年度国家教育考试科研规划课题的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/1705/2929-1.htm",
+          "title": "国家教育考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/1705/2935-1.htm",
+          "title": "社会证书考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/1705/2957-1.htm",
+          "title": "海外考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://cet.neea.edu.cn/html1/category/1705/2978-1.htm",
+          "title": "其它",
+          "looks": "unknown"
+        }
+      ],
+      "errors": [],
+      "summary": {
+        "total_new": 35,
+        "title_confirmed": 24,
+        "archive_unverified": 3
+      }
+    },
+    {
+      "site": "NCRE考试网",
+      "columns": [
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-1.htm",
+          "http": 200,
+          "article_links": 23
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/",
+          "http": 200,
+          "article_links": 12
+        }
+      ],
+      "new_candidates": [
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-1.htm",
+          "title": "考试资讯",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2611/25-1.htm",
+          "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2609/73-1.htm",
+          "title": "教育部部署2027年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2609/40-1.htm",
+          "title": "教育部部署2026年全国成人高校招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2609/36-1.htm",
+          "title": "教育部办公厅关于做好2026年全国成人高校招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2606/14-1.htm",
+          "title": "怀进鹏视频调度2026年全国高考组织工作",
+          "looks": "archive"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2606/5-1.htm",
+          "title": "教育部会同有关部门启动实施“2026年高考护航行动”",
+          "looks": "archive"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2606/3-1.htm",
+          "title": "教育部发布2026年高考预警信息",
+          "looks": "archive"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2604/144-1.htm",
+          "title": "2026年全国普通高校招生考试安全工作视频会议召开",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2601/60-1.htm",
+          "title": "教育部部署做好2026年普通高校招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2512/23-1.htm",
+          "title": "教育部公布2026年全国硕士研究生招生考试违法违规行为举报电话",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2512/7-1.htm",
+          "title": "2026年面向香港、澳门、台湾地区研究生招生考试《综合能力（一）考试指南》<br>《综合能力（二）考试指南》正式公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2511/127-1.htm",
+          "title": "教育部部署2026年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2511/121-1.htm",
+          "title": "教育部教育考试院2026年度统一公开招聘公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2509/58-1.htm",
+          "title": "教育部部署2026年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2509/43-1.htm",
+          "title": "教育部办公厅关于做好2025年全国成人高校招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-2.htm",
+          "title": "2",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-3.htm",
+          "title": "3",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-4.htm",
+          "title": "4",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-5.htm",
+          "title": "5",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-6.htm",
+          "title": "6",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-7.htm",
+          "title": "7",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-8.htm",
+          "title": "8",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/1508/151-1.htm",
+          "title": "公示公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2609/27-1.htm",
+          "title": "2026年度国家教育考试科研规划课题立项名单公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2608/25-1.htm",
+          "title": "关于2026年度国家教育考试科研规划课题拟立项名单的公示",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2604/99-1.htm",
+          "title": "教育部教育考试院关于申报2026年度国家教育考试科研规划课题的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2512/20-1.htm",
+          "title": "关于征集2026年度教育考试科研项目选题的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2509/4-1.htm",
+          "title": "2025年度国家教育考试科研规划课题立项名单公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2508/14-1.htm",
+          "title": "关于2025年度国家教育考试科研规划课题拟立项名单的公示",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/report/2504/105-1.htm",
+          "title": "教育部教育考试院关于申报2025年度国家教育考试科研规划课题的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/1705/2929-1.htm",
+          "title": "国家教育考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/1705/2935-1.htm",
+          "title": "社会证书考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/1705/2957-1.htm",
+          "title": "海外考试",
+          "looks": "title"
+        },
+        {
+          "url": "https://ncre.neea.edu.cn/html1/category/1705/2978-1.htm",
+          "title": "其它",
+          "looks": "unknown"
+        }
+      ],
+      "errors": [],
+      "summary": {
+        "total_new": 35,
+        "title_confirmed": 24,
+        "archive_unverified": 3
+      }
+    },
+    {
+      "site": "研招网",
+      "columns": [
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/",
+          "http": 200,
+          "article_links": 83
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/",
+          "http": 200,
+          "article_links": 80
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/",
+          "http": 200,
+          "article_links": 35
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/",
+          "http": 200,
+          "article_links": 49
+        },
+        {
+          "url": "https://yz.chsi.com.cn/sswbgg/",
+          "http": 200,
+          "article_links": 0
+        }
+      ],
+      "new_candidates": [
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202202/20220214/2164603828.html",
+          "title": "教育部 财政部 国家发展改革委关于深入推进 世界一流大学和一流学科建设的若干意见",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/201903/20190301/1772948100.html",
+          "title": "教育部办公厅关于进一步规范和加强研究生培养管理的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/201903/20190301/1772948095.html",
+          "title": "教育部办公厅关于进一步规范和加强研究生考试招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202607/20260729/2293872830.html",
+          "title": "不让一个学生因家庭经济困难而失学！教育部发布会聚焦学生资助工作",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202607/20260702/2293872829.html",
+          "title": "2026年暑期教育部高校学生资助热线电话公布",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202605/20260509/2293469177.html",
+          "title": "教育部办公厅关于做好2026年高校思想政治工作骨干在职攻读博士学位专项计划工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202602/20260228/2293449091.html",
+          "title": "教育部部署2026年全国硕士研究生招生复试录取工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202512/20251219/2293443369.html",
+          "title": "2026年全国硕士研究生招生考试各项工作准备就绪",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202512/20251215/2293443076.html",
+          "title": "教育部办公厅关于做好2026年退役大学生士兵专项硕士研究生招生计划招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202512/20251211/2293442901.html",
+          "title": "教育部关于发布《卓越工程师教育认证标准》教育行业标准的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202512/20251211/2293442903.html",
+          "title": "教育部学位管理与研究生教育司负责人就《卓越工程师教育认证标准》答记者问",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202511/20251124/2293442260.html",
+          "title": "教育部部署2026年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202509/20250925/2293432170.html",
+          "title": "《2026年全国硕士研究生招生工作管理规定》",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202509/20250924/2293432113.html",
+          "title": "教育部部署2026年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202509/20250912/2293411123.html",
+          "title": "教育部办公厅关于对新增推免资格高校予以备案的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202502/20250224/2293352961.html",
+          "title": "教育部部署2025年全国硕士研究生招生复试录取工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202502/20250214/2293354430.html",
+          "title": "关于做好2025年同等学力人员申请硕士学位外国语水平和学科综合水平全国统一考试工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202412/20241203/2293348238.html",
+          "title": "教育部办公厅关于做好2025年退役大学生士兵专项硕士研究生招生计划招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202411/20241121/2293347893.html",
+          "title": "教育部部署2025年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202410/20241008/2293342617.html",
+          "title": "教育部关于印发《2025年全国硕士研究生招生工作管理规定》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202408/20240820/2293305137.html",
+          "title": "教育部办公厅关于深入推进实施国家优秀中小学教师培养计划的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202408/20240820/2293305129.html",
+          "title": "教育部公布第二批“国优计划”试点高校名单",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202406/20240617/2293296999.html",
+          "title": "国务院办公厅转发教育部等部门《教育部直属师范大学本研衔接师范生公费教育实施办法》",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202406/20240617/2293298125.html",
+          "title": "教育部有关负责人就《教育部直属师范大学本研衔接师范生公费教育实施办法》答记者问",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202405/20240513/2293291727.html",
+          "title": "关于做好2024年同等学力人员申请硕士学位全国统一考试安全工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202403/20240312/2293269479.html",
+          "title": "教育部部署2024年全国硕士研究生招生复试录取工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202402/20240221/2293256434.html",
+          "title": "教育部办公厅关于做好2024年高校思想政治工作骨干在职攻读博士学位专项计划工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202312/20231220/2293236781.html",
+          "title": "教育部：到“十四五”末 专硕招生规模将约占硕士招生总规模的三分之二",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202312/20231220/2293236780.html",
+          "title": "教育部：加强专业型博士培养 大力发展博士专业学位",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202312/20231220/2293236779.html",
+          "title": "教育部：我国研究生教育分类发展格局基本形成 专业学位授予人数占比达56.4%",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202312/20231219/2293237544.html",
+          "title": "教育部部署各地积极防范应对低温雨雪冰冻等灾害 进一步做好2024年研考工作",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202312/20231219/2293237497.html",
+          "title": "教育部学位管理与研究生教育司：深入推进分类发展，构建高质量研究生教育体系",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202312/20231207/2293172759.html",
+          "title": "教育部关于修改《国家教育考试违规处理办法》的决定",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202311/20231122/2293171196.html",
+          "title": "教育部召开会议部署2024年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202311/20231113/2293164983.html",
+          "title": "教育部办公厅关于做好2024年退役大学生士兵专项硕士研究生招生计划招生工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202310/20231009/2293154019.html",
+          "title": "学位授予单位（不含军队单位）自主设置二级学科和交叉学科名单",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202309/20230927/2293158485.html",
+          "title": "卓越工程师产教融合培养工作推进会召开",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202309/20230915/2293123516.html",
+          "title": "教育部关于印发《2024年全国硕士研究生招生工作管理规定》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202309/20230915/2293123514.html",
+          "title": "教育部部署2024年全国硕士研究生考试招生工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202309/20230914/2293121989.html",
+          "title": "教育部办公厅关于切实做好2023年秋季学期高校学生资助工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202309/20230913/2293158483.html",
+          "title": "教育部办公厅关于开展第二批国家卓越工程师学院建设工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202308/20230823/2293107421.html",
+          "title": "2024年全国硕士研究生招生考试《教育综合考试大纲》正式公布",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202308/20230801/2293109463.html",
+          "title": "引导鼓励高校毕业生赴基层就业",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202307/20230727/2293104483.html",
+          "title": "教育部教师工作司负责人就《关于实施国家优秀中小学教师培养计划的意见》答记者问",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202307/20230727/2293105996.html",
+          "title": "教育部实施“国优计划”，组织高水平高校培养高素质中小学教师人才",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202302/20230210/2256819640.html",
+          "title": "关于做好2023年同等学力人员申请硕士学位外国语水平和学科综合水平全国统一考试工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202212/20221221/2248396647.html",
+          "title": "教育部会同中央网信办、公安部、国家疾控局召开2023年研考工作调度会 全力确保研考平稳顺利实施",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202212/20221214/2245913411.html",
+          "title": "全力以赴实现如期考试、应考尽考、平安研考 ——2023年全国硕士研究生招生考试组考防疫工作答记者问",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202212/20221214/2245913408.html",
+          "title": "教育部、国家卫健委、国家疾控局专项部署进一步做好2023年全国硕士研究生招生考试组考防疫工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202212/20221207/2240829784.html",
+          "title": "教育部部署进一步做好2023年研究生考试组织工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202211/20221122/2235584906.html",
+          "title": "教育部召开党组会深入学习贯彻习近平总书记关于疫情防控重要指示精神",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202211/20221117/2234234618.html",
+          "title": "教育部召开视频会议部署2023年全国硕士研究生招生考试安全工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202210/20221031/2230353990.html",
+          "title": "教育部办公厅关于下达2023年退役大学生士兵专项硕士研究生招生计划的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220927/2293158474.html",
+          "title": "教育部国资委联合召开卓越工程师培养工作推进会",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220914/2216476484.html",
+          "title": "国务院学位委员会办公室负责人就新版研究生教育学科专业目录和目录管理办法答记者问",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220914/2216547448.html",
+          "title": "研究生教育学科专业目录（2022年）发布，自2023年起实施",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+          "title": "研究生教育学科专业目录（2022年）",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220906/2215398338.html",
+          "title": "教育部关于印发《2023年全国硕士研究生招生工作管理规定》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220830/2214019007.html",
+          "title": "教育部印发《关于加强高校有组织科研 推动高水平自立自强的若干意见》",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220824/2212769950.html",
+          "title": "教育部学位管理与研究生教育司负责人就《关于支持建设一批科技小院的通知》答记者问",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220823/2212693233.html",
+          "title": "教育部办公厅 农业农村部办公厅 中国科协办公厅关于支持建设一批科技小院的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220823/2212693228.html",
+          "title": "教育部等三部门：支持建设一批科技小院 农业研究生培养模式改革再出发",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220823/2212761006.html",
+          "title": "教育部办公厅 司法部办公厅关于实施 法律硕士专业学位（国际仲裁） 研究生培养项目的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220818/2212094261.html",
+          "title": "教育部印发通知部署统筹做好2022年秋季学期开学和疫情防控工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220816/2211091918.html",
+          "title": "科技部等六部门发文 统筹推进人工智能场景创新",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202208/20220805/2208899050.html",
+          "title": "习近平总书记在省部级主要领导干部专题研讨班上的重要讲话在广大知识分子和青年学生中引发热烈反响",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202206/20220629/2198872921.html",
+          "title": "教育部高校学生资助热线电话暑期集中受理时段今日开始",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202204/20220429/2189258995.html",
+          "title": "关于延期举行2022年同等学力人员申请硕士学位外国语水平和学科综合水平全国统一考试的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202203/20220325/2175422760.html",
+          "title": "教育部等三部门发文 推广科技小院研究生培养模式",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202203/20220322/2214670840.html",
+          "title": "教育部办公厅 农业农村部办公厅 中国科协办公厅关于推广科技小院研究生培养模式 助力乡村人才振兴的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202203/20220301/2170059721.html",
+          "title": "2021年全国教育事业统计主要结果",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202202/20220221/2168342456.html",
+          "title": "教育部办公厅关于做好2022年高校思想政治工作骨干在职攻读博士学位专项计划工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202202/20220215/2164604126.html",
+          "title": "教育部印发通知部署科学精准做好2022年春季学期疫情防控工作",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202202/20220214/2164603830.html",
+          "title": "教育部有关负责人就第二轮“双一流”建设有关情况答记者问",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202202/20220214/2292114685.html",
+          "title": "教育部 财政部 国家发展改革委关于公布第二轮“双一流”建设高校及建设学科名单的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202201/20220124/2160599887.html",
+          "title": "推进免试认定改革 吸引优秀人才任教",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260924/2293971536.html",
+          "title": "2027研考日程表",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202610/20261019/2293981260.html",
+          "title": "关于做好专业学位研究生以实践成果申请学位工作的意见",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202609/20260924/2293971511.html#part03",
+          "title": "报名条件",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202611/20261119/2293982482.html",
+          "title": "2027年温州肯恩大学研究生专业|特殊教育学硕士Special Education(M.A.)",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202611/20261113/2293984091.html",
+          "title": "2027年温州肯恩大学研究生专业|传播学硕士",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202611/20261106/2293983966.html",
+          "title": "硕士招生|2027西交利物浦大学硕士研究生申请指南",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261020/2293981975.html",
+          "title": "浙江越秀外国语学院2027年硕士研究生招生",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261014/2293980625.html",
+          "title": "华南理工大学工商管理学院最新招生信息",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261014/2293979072.html",
+          "title": "西京学院2027年硕士研究生招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261014/2293979063.html",
+          "title": "广东工业大学数字经济专业硕士（非全日制）",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261010/2293978546.html",
+          "title": "一图读懂2027级复旦大学全日制金融MBA招生政策",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261008/2293977397.html",
+          "title": "肇庆学院2027年硕士招生",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261008/2293977396.html",
+          "title": "浙江传媒学院2027年硕士研究生招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202610/20261008/2293977395.html",
+          "title": "浙江工商大学2027年硕士研究生招生章程",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260929/2293975828.html",
+          "title": "西藏民族大学2027年硕士研究生招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260929/2293975827.html",
+          "title": "浙江理工大学2027年硕士研究生招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260921/2293969675.html",
+          "title": "华东师范大学2026年“国优计划”遴选在读硕士研究生工作方案",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260918/2293965116.html",
+          "title": "西安交通大学：关于2026年“国优计划”遴选在读研究生的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260910/2293949740.html",
+          "title": "北京第二外国语学院MPAcc（非全解决住宿）",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260902/2293936308.html",
+          "title": "国科大杭州高等研究院2027年接收推荐免试硕士研究生公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202609/20260901/2293936036.html",
+          "title": "深圳大学2027年接收推荐免试研究生预报名的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202608/20260831/2293936035.html",
+          "title": "北京第二外国语学院MBA、MTA2027年招生信息",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202608/20260825/2293935468.html",
+          "title": "南京大学2027年“国优计划”推荐免试硕士研究生报名通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202608/20260807/2293933720.html",
+          "title": "华南理工大学2027MBA青年领袖体验营邀你同行",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202608/20260804/2293875752.html",
+          "title": "关于江苏海洋大学2027年硕士研究生招生专业目录调整的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202608/20260804/2293875740.html",
+          "title": "博士招生｜宁波诺丁汉大学2027春季入学博士申请指南",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260730/2293875636.html",
+          "title": "上海科技大学研究生奖助学金管理办法",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260724/2293875529.html",
+          "title": "西北师范大学2027年硕士研究生招生考试相关内容调整公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260723/2293875500.html",
+          "title": "浙江工商大学关于调整2027年硕士研究生招生初试科目的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260723/2293875499.html",
+          "title": "西安建筑科技大学2027年全国硕士研究生招生考试初试科目、参考书目及相关事项调整公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260715/2293873590.html",
+          "title": "杭州师范大学2027年硕士研究生招生考试（初试）招生目录拟调整公告（持续更新中）",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260715/2293873579.html",
+          "title": "浙江农林大学2027年硕士研究生招生专业及初试科目拟调整公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260715/2293873578.html",
+          "title": "浙江传媒学院硕士研究生招生专业介绍",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260708/2293875642.html",
+          "title": "中国海洋大学研究生资助与奖励办法（修订）",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260702/2293875628.html",
+          "title": "西南科技大学2026年研究生资助政策简介",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202607/20260701/2293871695.html",
+          "title": "2027级清华MBA北京站系列招生活动即将开启！",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202606/20260615/2293808270.html",
+          "title": "深圳北理莫斯科大学2026年第二轮招收硕士研究生报名通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202606/20260609/2293712665.html",
+          "title": "华中科技大学研究生招生严正声明",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202606/20260601/2293519378.html",
+          "title": "浙江理工大学关于组织2026年博士研究生第三批报名工作的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202605/20260522/2293875626.html",
+          "title": "广东外语外贸大学研究生资助政策简介",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202605/20260519/2293477908.html",
+          "title": "浙江理工大学关于组织2026年博士研究生第二批报名工作的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260415/2293468290.html",
+          "title": "西安工程大学管理学院2026硕士研究生调剂信息公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260415/2293468289.html",
+          "title": "浙江万里学院2026年硕士研究生调剂信息",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260414/2293468247.html",
+          "title": "浙江万里学院德国品牌应用科学大学联合学院硕士专业申请开通",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260414/2293461897.html",
+          "title": "南方科技大学科创MBA（非全日制）最新调剂公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260410/2293459768.html",
+          "title": "广东工业大学经济学院硕士研究生招生调剂公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260410/2293459765.html",
+          "title": "南方科技大学科创MBA（非全日制）调剂信息",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260403/2293457866.html",
+          "title": "中南财经政法大学2026级工商管理硕士招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260401/2293457674.html",
+          "title": "接受调剂丨2026年杭州师范大学阿里巴巴商学院MBA调剂通道现已开启",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260401/2293457671.html",
+          "title": "广东工业大学2026年MBA/MPAcc/MEM/工商管理学调剂通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260401/2293457669.html",
+          "title": "浙江师范大学2026年硕士研究生调剂预告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260401/2293457668.html",
+          "title": "西京学院2026年硕士研究生招生调剂公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202604/20260401/2293456730.html",
+          "title": "应急管理大学（防灾科技学院）2026年接收专业学位硕士研究生调剂公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202603/20260326/2293454834.html",
+          "title": "硕士｜香港城市大学（东莞）工程管理学硕士专业介绍",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202603/20260319/2293452195.html",
+          "title": "深圳北理莫斯科大学2026年硕士研究生招生预通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202603/20260310/2293449419.html",
+          "title": "硕士｜香港城市大学（东莞）生物医学工程硕士专业介绍",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202603/20260302/2293449130.html",
+          "title": "中欧国际工商学院在职MBA立足大湾区、放眼全世界",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260212/2293449518.html",
+          "title": "哈尔滨工业大学（深圳）低空技术与工程学科2026年硕士研究生招生考试复试参考",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260209/2293447425.html",
+          "title": "南昌大学2026年临床医学、口腔医学专业学位硕士研究生复试临床技能考核范围预告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260205/2293447357.html",
+          "title": "东华大学2026年硕士研究生招生考试复试内容提醒",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260204/2293448854.html",
+          "title": "西昌学院2026年硕士研究生复试、同等学力加试科目考试大纲",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260204/2293448853.html",
+          "title": "哈尔滨工业大学未来工学院2026年硕士研究生招生复试参考",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260203/2293448777.html",
+          "title": "关于中南大学大数据研究院2026年硕士研究生招生复试形式的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202602/20260203/2293448771.html",
+          "title": "中国传媒大学关于2026年硕士研究生招生提交报考材料的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202601/20260130/2293447328.html",
+          "title": "四川美术学院2026年招收攻读博士研究生招生章程",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202601/20260129/2293447287.html",
+          "title": "温州肯恩大学新增2个硕士专业！国际视野+全球认可",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202601/20260123/2293448574.html",
+          "title": "武汉工程大学2026年博士研究生招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202601/20260122/2293447212.html",
+          "title": "沈阳药科大学：关于我校2027年全国硕士研究生招生考试自命题考试内容调整的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202601/20260121/2293447163.html",
+          "title": "中南财经政法大学：关于2027年硕士研究生招生考试金融、保险专业初试科目调整的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202512/20251219/2293446219.html",
+          "title": "杭州师范大学2026年博士招生信息",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202511/20251127/2293442306.html",
+          "title": "中南财经政法大学2026年招收攻读博士学位研究生简章",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202511/20251121/2293443916.html",
+          "title": "决胜之路丨最后30天，阿里MBA与你并肩同行！",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202511/20251113/2293443647.html",
+          "title": "上海交通大学与宁波东方理工大学2026年博士生招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251031/2293439290.html",
+          "title": "湖南大学关于2025级研究生学信网学籍电子注册信息核对的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251030/2293440470.html",
+          "title": "福州大学关于2026年硕士研究生招生考试（初试）自命题科目考试用具的公告",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251029/2293440391.html",
+          "title": "官宣 | 华南理工大学EMBA项目奖学金计划隆重推出!",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251028/2293438870.html",
+          "title": "福建福耀科技大学与厦门大学2026年联合培养硕士研究生招生通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251027/2293438757.html",
+          "title": "南京大学2026年硕士研究生学制与培养费用",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251027/2293438755.html",
+          "title": "东南大学2026年硕士研究生学费标准",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251024/2293440206.html",
+          "title": "北京理工大学（珠海）最新研究生招生资讯",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251024/2293440205.html",
+          "title": "香港城市大学（东莞）2026年硕士申请正式开放",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/yxzc/202510/20251024/2293440204.html",
+          "title": "华南农业大学报考点2026年全国硕士生招生考试网上确认说明",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202602/20260205/2293447363.html",
+          "title": "关于公布通过2025年质量监测的农业专业学位研究生培养单位和科技小院名单的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202512/20251225/2293446273.html",
+          "title": "国务院学位委员会关于印发《博士硕士学位授予资格审核办法》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202508/20250828/2293396824.html",
+          "title": "中央教育工作领导小组印发《高等教育学科专业设置调整优化行动方案（2025—2027年）》",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202504/20250402/2293369264.html",
+          "title": "关于做好2025年国家助学贷款免息及本金延期偿还工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202502/20250207/2293352496.html",
+          "title": "国家发展改革委办公厅等关于进一步提高高校学生医疗保障质量的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202501/20250121/2293353482.html",
+          "title": "中共中央 国务院印发《教育强国建设规划纲要（2024－2035年）》",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202410/20241030/2293346384.html",
+          "title": "以评价改革为牵引 全面提升工程博士培养质量",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202410/20241030/2293346381.html",
+          "title": "关于转发工程类博士专业学位研究生学位论文与申请学位实践成果基本要求（试行）的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202410/20241029/2293346336.html",
+          "title": "关于调整高等教育阶段和高中阶段国家奖助学金政策的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202410/20241021/2293345664.html",
+          "title": "中共中央办公厅 国务院办公厅印发《关于加快推动博士研究生教育高质量发展的意见》",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202410/20241008/2293342647.html",
+          "title": "教育部关于印发《2025年全国硕士研究生招生工作管理规定》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202408/20240820/2293306479.html",
+          "title": "教育部办公厅关于深入推进实施国家优秀中小学教师培养计划的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202406/20240617/2293296995.html",
+          "title": "国务院办公厅关于转发教育部等部门《教育部直属师范大学本研衔接师范生公费教育实施办法》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202404/20240428/2293288848.html",
+          "title": "中华人民共和国学位法",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202404/20240417/2293289976.html",
+          "title": "教育部办公厅 农业农村部办公厅 中国科协办公厅关于支持建设第二批科技小院及科技小院集群的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202403/20240301/2293258444.html",
+          "title": "2023年全国教育事业发展基本情况",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202402/20240206/2293256178.html",
+          "title": "2024年国家助学贷款免息及本金延期偿还如何操作？官方解读",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202402/20240202/2293256026.html",
+          "title": "关于做好2024年国家助学贷款免息及本金延期偿还工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202402/20240202/2293256002.html",
+          "title": "关于做好2024年同等学力人员申请硕士学位外国语水平和学科综合水平全国统一考试工作的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202402/20240202/2293256000.html",
+          "title": "关于学科目录调整后授予具有研究生毕业同等学力人员硕士、博士学位工作有关事项的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202401/20240122/2293249795.html",
+          "title": "国家发展改革委等部门关于加强高校学生宿舍建设的指导意见",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202401/20240112/2293248063.html",
+          "title": "2024年全国教育工作会议召开",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202401/20240110/2293288902.html",
+          "title": "国务院学位委员会关于修订印发《博士硕士学位授权审核办法》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202312/20231221/2293237709.html",
+          "title": "教育部：全力做好2024年全国研考准备工作",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202312/20231219/2293237496.html",
+          "title": "教育部关于深入推进学术学位与专业学位研究生教育分类发展的意见",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202312/20231212/2293175725.html",
+          "title": "新时代研究生教育教学改革座谈推进会暨高等教育（研究生）国家级教学成果奖获奖成果交流研讨会在沪召开",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202310/20231030/2293158729.html",
+          "title": "保障困难学生群体公平接受教育",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202310/20231020/2293160046.html",
+          "title": "教育部党组传达学习习近平总书记重要讲话和重要指示精神",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202310/20231017/2293159812.html",
+          "title": "高质量推进共建“一带一路”教育行动",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202309/20230915/2293123518.html",
+          "title": "教育部关于印发《2024年全国硕士研究生招生工作管理规定》的通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202309/20230911/2293115696.html",
+          "title": "推动教育强国建设行稳致远 ——5年来我国教育事业改革发展综述",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202309/20230911/2293115687.html",
+          "title": "习近平总书记在哈尔滨工程大学考察时的重要讲话引发师生热烈反响",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202308/20230829/2293111053.html",
+          "title": "学位法草案完善学位管理体制",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/zcdh/202307/20230713/2293100878.html",
+          "title": "教育部召开直属机关警示教育会",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202611/20261118/2293982446.html",
+          "title": "东北师范大学列宾美术学院2027年招收首批硕士研究生",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202611/20261113/2293984068.html",
+          "title": "江苏海洋大学组织开展2027年研究生招生宣讲活动",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202611/20261106/2293983965.html",
+          "title": "博士招生|11月，与宁波诺丁汉大学博士生导师面对面",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261029/2293983776.html",
+          "title": "上海交通大学上海高级金融学院2027级MBA招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261029/2293983775.html",
+          "title": "澳门理工大学2027/2028学年研究生课程现正招生",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261023/2293983690.html",
+          "title": "2027年温州肯恩大学新增环境管理理学硕士项目",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261021/2293983554.html",
+          "title": "第十三届中国研究生能源装备创新设计大赛全国总决赛在长江大学举行",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261020/2293981977.html",
+          "title": "西京学院研究生教育：以“四个一”锻造高层次应用型人才",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261016/2293981895.html",
+          "title": "北航经管学院2027年MPAcc（非全）招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261014/2293980660.html",
+          "title": "甘肃省2027年全国硕士研究生招生考试网上报名常见问题解答",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261014/2293979088.html",
+          "title": "杭州师范大学阿里巴巴商学院MBA",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261014/2293979084.html",
+          "title": "南方医科大学2027年硕士研究生招生",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261014/2293979082.html",
+          "title": "浙江农林大学2027年硕士研究生招生",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261008/2293977284.html",
+          "title": "四川省2027年全国硕士研究生招生考试网上报名相关问题解读25问",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261008/2293977279.html",
+          "title": "河南：2027年研考报名60问",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261008/2293977263.html",
+          "title": "上海市2027年全国硕士研究生招生考试网上咨询将于10月12日举行",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261008/2293977251.html",
+          "title": "河北省2027年全国硕士研究生招生考试百问百答（一）报名篇",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202610/20261008/2293977398.html",
+          "title": "【直播预约】清华大学技术转移硕士招生说明会",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260929/2293975829.html",
+          "title": "浙江理工大学2027年硕士研究生招生专业目录及自命题科目考试大纲",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260924/2293971533.html",
+          "title": "@2027研考生，研考网报两项优化助你报考",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260915/2293960994.html",
+          "title": "澳门城市大学2027年硕士/博士研究生已开放报名",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260910/2293950353.html",
+          "title": "“理”想之路｜澳门理工大学9月16日招生活动来哈尔滨啦！",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260910/2293950212.html",
+          "title": "@27研考生，如何破解“学不进去”7大困境？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260904/2293937260.html",
+          "title": "天津大学宣怀学院2027级科创硕士推免预报名通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260904/2293938727.html",
+          "title": "报名开启！2027级清华经管学院数字经济硕士招生说明会",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260902/2293936345.html",
+          "title": "“研”途上新！温州肯恩大学迎来2026级研究生新生",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260902/2293936340.html",
+          "title": "清华大学会计硕士2027级招生说明会通知",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202609/20260901/2293936030.html",
+          "title": "自主招生| 南开大学中澳合作办学硕士招生简章",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202608/20260831/2293935647.html",
+          "title": "华东政法大学公共管理硕士（MPA）招生简介",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202608/20260807/2293933721.html",
+          "title": "北国会2026级IT审计硕士10月开学，现补录20人",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260730/2293872858.html",
+          "title": "2025年全国累计资助学生近1.6亿人次",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260724/2293872646.html",
+          "title": "华南农业大学新增6个党建项目入选教育部“双创”名单",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260715/2293873577.html",
+          "title": "深圳大学2027年研究生招生宣传片-中国经济特区研究中心",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260708/2293870768.html",
+          "title": "中财大MEM项目重磅推出新方向：数智工程管理",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260707/2293872064.html",
+          "title": "研究生毕业，论文不再是必选项",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260703/2293870638.html",
+          "title": "2026年甘肃省学生资助政策简介（高等教育阶段）",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260702/2293870558.html",
+          "title": "江苏师范大学江苏圣理工学院-中俄学院硕士研究生项目暑期招生进行时",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202607/20260701/2293870209.html",
+          "title": "海南持续加强科技小院建设",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202606/20260622/2293839483.html",
+          "title": "2027中央财经大学MEM项目奖学金重磅上线",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202606/20260617/2293823620.html",
+          "title": "升学无忧！2026年广东省研究生学生资助政策",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202606/20260611/2293725264.html",
+          "title": "宁诺硕博招生|一年制硕士如何蜕变？善用资源，提前规划",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202606/20260611/2293725263.html",
+          "title": "澳门理工大学举行2026年毕业典礼近1700名毕业生开启新征程！",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202606/20260611/2293726217.html",
+          "title": "26级IT审计硕士报名8月即将收官（北京国家会计学院中外合办项目）",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202605/20260526/2293491286.html",
+          "title": "欢迎报考四川美术学院硕士研究生",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202605/20260521/2293484166.html",
+          "title": "澳门城市大学2026考研调剂 | 仍可申请",
+          "looks": "title"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202605/20260519/2293471139.html",
+          "title": "研究生贷款200万种1000亩地，只为搞明白一件事",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202605/20260514/2293472146.html",
+          "title": "温肯读研日记丨从WKU到浙大博士：在被用心培养的日子里，我慢慢走得更远",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202605/20260514/2293472137.html",
+          "title": "硬科技突围新赛道！同济MBA EMBA等项目全新升级",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://yz.chsi.com.cn/kyzx/kydt/202605/20260514/2293472134.html",
+          "title": "荔园有约 等你来见｜5月11日-24日深圳大学2027年研究生招生线上宣讲会预告！",
+          "looks": "title"
+        }
+      ],
+      "errors": [],
+      "summary": {
+        "total_new": 241,
+        "title_confirmed": 146,
+        "archive_unverified": 0
+      }
+    },
+    {
+      "site": "中国教育在线",
+      "columns": [
+        {
+          "url": "https://www.eol.cn/news/yaowen/",
+          "http": 200,
+          "article_links": 59
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/",
+          "http": 200,
+          "article_links": 20
+        }
+      ],
+      "new_candidates": [
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261120_2797112.shtml",
+          "title": "吉利控股集团董事长李书福：筹办芯位大学",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/gxrs/202611/t20261120_2796970.shtml",
+          "title": "北京信息科技大学领导班子调整",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/gxrs/202611/t20261120_2796956.shtml",
+          "title": "卢义玉任重庆大学党委常委、常务副校长",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/guancha/202611/t20261120_2796886.shtml",
+          "title": "减学分、可免修……大学英语要变了？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261120_2796805.shtml",
+          "title": "中国工程院院士、著名矿山瓦斯防治专家周世宁逝世",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261119_2796655.shtml",
+          "title": "2027届全国普通高校毕业生规模预计1299万人",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261119_2796609.shtml",
+          "title": "丁薛祥在江西调研时强调 立足特色和优势加快壮大新动能 推动高质量发展不断取得新成效",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202611/t20261119_2796423.shtml",
+          "title": "2026年度全球高被引科学家名单公布",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261119_2796369.shtml",
+          "title": "2026年度国家哲学社会科学成果文库名单公示！",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261119_2796350.shtml",
+          "title": "安阳师范学院，将更名大学！",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261119_2796317.shtml",
+          "title": "双导师制 + 单列招生计划！重庆启动校企联合人才培养和科研攻关项目申报",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/gxrs/202611/t20261118_2796186.shtml",
+          "title": "巩金龙任北京化工大学校长",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261118_2795913.shtml",
+          "title": "从“立柱架梁”到“落地生根”！各地“十五五”职业教育规划观察",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/tech/dongtai/202611/t20261118_2795754.shtml",
+          "title": "自然科学基金委新规明确划定经费管理使用“红线”",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261118_2795751.shtml",
+          "title": "任友群分别会见南非、安哥拉、巴西外宾",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261117_2795350.shtml",
+          "title": "1.4亿、1.2亿！中国人民大学获两笔捐赠 支持通州校区建设",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261117_2795279.shtml",
+          "title": "四川省商务厅副厅长乔方，拟任本科高校正职",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/guancha/202611/t20261117_2795275.shtml",
+          "title": "保研举报不是问题，恶意举报才是",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261117_2795266.shtml",
+          "title": "教育部：哲学、体育学原创性教材首次出版",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794998.shtml",
+          "title": "我国中小学校、幼儿园将聘任健康副校(园)长",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261116_2794957.shtml",
+          "title": "张雪峰任天津工业大学副校长",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794952.shtml",
+          "title": "江苏发布任前公示，2人拟任本科院校正职",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794943.shtml",
+          "title": "陕西多所高校领导班子调整！",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794925.shtml",
+          "title": "2026“一带一路”青年创意与遗产论坛开幕",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zjyw/202611/t20261116_2794923.shtml",
+          "title": "首个国际职业教育标准《北京协议》以六种语言全文发布",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/guancha/202611/t20261116_2794851.shtml",
+          "title": "“潮汐学校”，来了",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/guancha/202611/t20261116_2794847.shtml",
+          "title": "10岁，粉丝超220万：孩子怎么成了家长的老师？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794828.shtml",
+          "title": "习近平致信祝贺暨南大学建校120周年",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794688.shtml",
+          "title": "韩正出席2026世界中文大会开幕式并致辞",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261116_2794687.shtml",
+          "title": "2026世界中文大会全体会议举行",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/tech/dongtai/202611/t20261113_2794232.shtml",
+          "title": "中国科协撤销3人“全国优秀科技工作者”荣誉称号",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261113_2794185.shtml",
+          "title": "《云南省教育发展“十五五”规划》：推动昆明理工大学进入“双一流”建设行列",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261113_2794030.shtml",
+          "title": "2027考研报名人数347万，较去年增长4万人",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/paiming/202611/t20261113_2794019.shtml",
+          "title": "561所最全名单！2026年11月ESI大学排行榜公布",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/gxrs/202611/t20261113_2793982.shtml",
+          "title": "张荣刚任西北政法大学校长",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261113_2793935.shtml",
+          "title": "强化科技和人才支撑 服务现代化产业体系——第十三届产教融合发展战略国际论坛在武汉开幕",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261112_2793798.shtml",
+          "title": "名城名校双向赋能！多所985高校密集落地苏州推进校地校企深度合作",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261112_2793780.shtml",
+          "title": "《技能人才评价条例》向社会公开征求意见",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261112_2793764.shtml",
+          "title": "第十届中华经典诵读港澳展演交流活动举办",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261120_2797063.shtml",
+          "title": "2026中俄大学校长圆桌对话举行",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261120_2796943.shtml",
+          "title": "浙江大学成立数字物理交叉研究中心",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261120_2796940.shtml",
+          "title": "罕王实业集团向厦门大学捐赠1亿元支持智能制...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261120_2796923.shtml",
+          "title": "北京电影学院马克思主义学院成立！",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/dongtai/202611/t20261119_2796651.shtml",
+          "title": "诺奖得主莫滕·梅尔达尔加盟山东中医药大学",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202610/t20261029_2787807.shtml",
+          "title": "国考降温了吗？345万人过审，竞争仍达97:1",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202610/t20261028_2787319.shtml",
+          "title": "各地平均工资出炉！大学生求职，该怎么选？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202610/t20261012_2781488.shtml",
+          "title": "中国教育支出高吗？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202611/t20261120_2796833.shtml",
+          "title": "1299万人！2027届高校毕业生规模再创新高",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202609/t20260921_2776405.shtml",
+          "title": "青年失业率连升 高校毕业生就业供需压力凸显",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/shuju/uni/202609/t20260918_2775519.shtml",
+          "title": "过紧日子的北大，真的没钱了吗？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202611/t20261110_2792402.shtml",
+          "title": "邱勇：以全面从严治党新成效开创高校高质量...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202611/t20261105_2790765.shtml",
+          "title": "周光礼｜超越同质化：分类推进高校改革的行...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202610/t20261029_2787914.shtml",
+          "title": "刘登才：把握“大”与“小”的逻辑关系 为农...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202610/t20261023_2785985.shtml",
+          "title": "中南大学校长李建成：人工智能时代大学教育...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202610/t20261023_2785920.shtml",
+          "title": "段从宇 彭远鸿 安丽华：“一体推进教育科技...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202610/t20261023_2785908.shtml",
+          "title": "段从宇 彭远鸿 安丽华：“一体推进教育科技...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202610/t20261023_2785638.shtml",
+          "title": "徐飞：规模化创新的理论要义与中国实践",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/xueshu/hui/202610/t20261020_2784331.shtml",
+          "title": "清华大学党委书记邱勇：推进人工智能与哲学...",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202611/t20261119_2796401.shtml",
+          "title": "考研推免中的“斤斤计较”，是公平公正的重要一环",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202611/t20261109_2791794.shtml",
+          "title": "从付费实习到无薪招聘：背后是什么？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202611/t20261106_2791093.shtml",
+          "title": "高校为什么要考查抬头率？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202610/t20261026_2786531.shtml",
+          "title": "学医开始退潮了吗？为什么？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202609/t20260916_2774497.shtml",
+          "title": "与其纠缠取消英语，不如提高数学物理权重",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202609/t20260911_2772994.shtml",
+          "title": "一次新生测试，为什么闹出这么大动静？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202609/t20260907_2771278.shtml",
+          "title": "中考应该取消哪一门？减少考试科目就能减负吗？正常的学业负担应该减吗？",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202608/t20260828_2768619.shtml",
+          "title": "刚刚走出校门的应届毕业生，能否简单按照普通劳动者来对待？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202608/t20260827_2768266.shtml",
+          "title": "学生头发长短，学校怎么就不能管？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202608/t20260821_2766742.shtml",
+          "title": "董明珠举办格力技工学校，给了我们什么启示？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202608/t20260819_2766225.shtml",
+          "title": "中本贯通被追捧，是对确定性的精准算计，还是观念的改变？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202608/t20260804_2762614.shtml",
+          "title": "人人都有一张文凭，高考所守护的公平公正就转移到用人考试上",
+          "looks": "title"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202607/t20260730_2761395.shtml",
+          "title": "体育中考难过高考？看似荒唐的抱怨背后是什么？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202607/t20260703_2752203.shtml",
+          "title": "高分扎堆，“分数通胀”是怎么产生的？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202607/t20260701_2751593.shtml",
+          "title": "什么专业就业好？",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202606/t20260622_2747264.shtml",
+          "title": "志愿填报的三个原则问题与误区",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202606/t20260618_2746495.shtml",
+          "title": "高考命题改革：让应试教育无试可应！还想刷题？死了这条心！",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202606/t20260608_2742525.shtml",
+          "title": "数学题难了吗？是反刷题见效，让习惯了刷题的师生不适应了",
+          "looks": "unknown"
+        },
+        {
+          "url": "https://www.eol.cn/news/zbzl/202606/t20260607_2742243.shtml",
+          "title": "2026年高考语文试题点评",
+          "looks": "unknown"
+        }
+      ],
+      "errors": [],
+      "summary": {
+        "total_new": 77,
+        "title_confirmed": 6,
+        "archive_unverified": 0
+      }
+    }
+  ]
+}
