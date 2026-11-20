@@ -8,7 +8,7 @@
 >
 > 📄 **许可证：MIT**（见 `LICENSE`）。依赖链全为 MIT/Apache-2.0/BSD 宽松许可，无 GPL/AGPL 传染性。
 >
-> 🚀 **已推 GitHub 并具备上云条件**：`git@github.com:dawu-pj/exam-mcp-server.git`（Public / main，最新 `8c1082d`）。**部署照做见 `部署操作卡.md`**——FastMCP Gateway 网页三步（GitHub 授权→选仓库→Entrypoint 填 `src/mcp_server.py:mcp`），约 60 秒拿 `https://<name>.fastmcp.app/mcp`。已做云端只读文件系统降级 + 双依赖声明 + 放宽 Python 版本，入口经 `fastmcp inspect` 验证 4 工具识别。
+> 🚀 **已推 GitHub 并具备上云条件**：`git@github.com:dawu-pj/exam-mcp-server.git`（Public / main，最新 `14443db`）。**部署照做见 `部署操作卡.md`**——FastMCP Gateway 网页三步（GitHub 授权→选仓库→Entrypoint 填 `src/mcp_server.py:mcp`），约 60 秒拿 `https://<name>.fastmcp.app/mcp`。已做云端只读文件系统降级 + 双依赖声明 + 放宽 Python 版本，入口经 `fastmcp inspect` 验证 4 工具识别。
 
 ## 最快上手
 
@@ -65,24 +65,26 @@ powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一�
          ↓ 原始 HTML + 元数据 sidecar（统一中间契约）
 抽取层   trafilatura 2.0.0 —— 正文抽取（FineWeb 同款，Apache-2.0）
          + 站点级 CSS 选择器（goquery 思路的 Python 实现：parsel，Scrapy 自带）
-清洗层   jieba 0.42.1 中文分词 + URL 规范化 + 中文 PII 规则脱敏（待实现）
-         + SimHash 近重复检测（待实现，MVP 阶段先 URL 级去重）
+清洗层   jieba 0.42.1 中文分词 + URL 规范化 + 中文 PII 规则脱敏（已落，实测命中 2 处）
+         + SimHash 近重复检测（阶段 2，MVP 阶段先 URL 级去重）
 检索层   rank-bm25 0.2.2 —— 先验 recall@k，不接 embedding（已定 P0-5）
-评估层   50 页人工校验样本 + 10-20 个 golden set 问题（待用户提供站点后固化）
+评估层   golden set 5 题已固化并回归（10-20 题 + 50 页校验阶段 2 扩充）
 ```
 
 ## 已纳入的 8 个盲区（来自 100 词框架）
 
+> 状态已按 2026-11-19 交付实测同步（4 致命盲区全落）。详见 `MVP交付说明.md` 第三节核验表。
+
 | 盲区 | 状态 | 落点 |
 |---|---|---|
-| B1 采后义务（PII 删除/匿名化） | 设计中 | 清洗层独立模块；中文姓名只标记不删 |
-| B2 网页变了怎么办（重访/URL 规范化/删除同步） | 设计中 | sidecar 记录内容指纹与抓取时间 |
-| B3 元数据边界 | ✅ 已落 | `selftest.py` 的 `MetadataSidecar`：6 字段，含解析器/索引版本 |
-| B4 robots 取不到时（4xx 放行 / 5xx 全禁） | 设计中 | Scrapy 中间件，RFC9309 规则 |
-| Q1 结构分块（非固定 512） | 待检索验证后定 | 先 BM25 验证，再决定分块策略 |
-| Q2 混合检索 + reranker | 延期阶段 2 | 已确认 |
-| Q3 评估集固化 | 待用户提供站点 | golden set 落 `tests/` |
-| S1 通用/聚焦微调 | 已定 | A 通用广覆盖 / B 聚焦领域站点 |
+| B1 采后义务（PII 删除/匿名化） | ✅ 已落 | `cleaning.py`：身份证 GB11643 校验位+手机号+邮箱；实测脱敏 2 处，中文姓名只标记不删 |
+| B2 网页变了怎么办（重访/URL 规范化/删除同步） | ✅ 已落 | URL 规范化 + 正文 SHA256 指纹 + fetched_at；重访调度延阶段 2 |
+| B3 元数据边界 | ✅ 已落 | sidecar 14 字段（非 6）；检索按 site 过滤 |
+| B4 robots 取不到时（4xx 放行 / 5xx 全禁） | ✅ 已落 | Scrapy protego + RFC9309；实测 4 站 404 放行、1 站 200 按规则 |
+| Q1 结构分块（非固定 512） | ⏳ 顺延 | BM25 阶段整篇索引够用，接 embedding 前再做 |
+| Q2 混合检索 + reranker | ⏳ 延期阶段 2 | 已确认，未做 |
+| Q3 评估集固化 | ✅ 已落 | `tests/golden_set.json` 5 题 + `evaluate.py`，Top-1 100%；扩到 10-20 题待阶段 2 |
+| S1 通用/聚焦微调 | ✅ 已定 | A 通用广覆盖 / B 聚焦领域站点 |
 
 ## 目标站点（P0-2 已由实测补齐，见 `考试站点实测选型结论.md`）
 
