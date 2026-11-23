@@ -1,0 +1,373 @@
+{
+  "rechecked_at": "2026-11-23 23:51:55",
+  "note": "抽样复核，不入库不改主链路；旧快照 data/column_probe.json 未被覆盖",
+  "old_columns": [
+    {
+      "name": "中国教育考试网",
+      "url": "https://www.neea.edu.cn/html1/category/16093/615-1.htm",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 24657,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "关于我们",
+          "url": "https://www.neea.edu.cn/html1/folder/1510/793-1.htm"
+        },
+        {
+          "title": "ENGLISH",
+          "url": "https://www.neea.edu.cn/html1/folder/16013/2-1.htm"
+        },
+        {
+          "title": "考试资讯",
+          "url": "https://www.neea.edu.cn/html1/category/16093/615-1.htm"
+        },
+        {
+          "title": "公示公告",
+          "url": "https://www.neea.edu.cn/html1/category/1508/151-1.htm"
+        },
+        {
+          "title": "考试项目",
+          "url": "https://www.neea.edu.cn/html1/folder/16103/1271-1.htm"
+        }
+      ],
+      "article_links_sample": 5
+    },
+    {
+      "name": "四六级考试网",
+      "url": "https://cet.neea.edu.cn/html1/category/16093/615-1.htm",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 24657,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "首页",
+          "url": "https://cet.neea.edu.cn/html1/folder/1508/113-1.htm"
+        },
+        {
+          "title": "新闻",
+          "url": "https://cet.neea.edu.cn/html1/folder/1508/149-1.htm"
+        },
+        {
+          "title": "考试资讯",
+          "url": "https://cet.neea.edu.cn/html1/category/16093/615-1.htm"
+        },
+        {
+          "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+          "url": "https://cet.neea.edu.cn/html1/report/2611/25-1.htm"
+        },
+        {
+          "title": "教育部部署2027年全国硕士研究生考试招生工作",
+          "url": "https://cet.neea.edu.cn/html1/report/2609/73-1.htm"
+        }
+      ],
+      "article_links_sample": 5
+    },
+    {
+      "name": "NCRE考试网",
+      "url": "https://ncre.neea.edu.cn/html1/category/16093/615-1.htm",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 24657,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "首页",
+          "url": "https://ncre.neea.edu.cn/html1/folder/1508/113-1.htm"
+        },
+        {
+          "title": "新闻",
+          "url": "https://ncre.neea.edu.cn/html1/folder/1508/149-1.htm"
+        },
+        {
+          "title": "考试资讯",
+          "url": "https://ncre.neea.edu.cn/html1/category/16093/615-1.htm"
+        },
+        {
+          "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+          "url": "https://ncre.neea.edu.cn/html1/report/2611/25-1.htm"
+        },
+        {
+          "title": "教育部部署2027年全国硕士研究生考试招生工作",
+          "url": "https://ncre.neea.edu.cn/html1/report/2609/73-1.htm"
+        }
+      ],
+      "article_links_sample": 5
+    },
+    {
+      "name": "研招网",
+      "url": "https://yz.chsi.com.cn/kyzx/jybzc/",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 63286,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "复试分数线",
+          "url": "https://yz.chsi.com.cn/kyzx/zt/kyfs.shtml"
+        },
+        {
+          "title": "专业学位",
+          "url": "https://yz.chsi.com.cn/kyzx/zt/zsxz.shtml"
+        },
+        {
+          "title": "教育部关于印发《2027年全国硕士研究生招生工作管理规定》的通知",
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202609/20260924/2293971511.html"
+        },
+        {
+          "title": "教育部 财政部 国家发展改革委关于深入推进 世界一流大学和一流学科建设的若干意见",
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/202202/20220214/2164603828.html"
+        },
+        {
+          "title": "教育部办公厅关于进一步规范和加强研究生培养管理的通知",
+          "url": "https://yz.chsi.com.cn/kyzx/jybzc/201903/20190301/1772948100.html"
+        }
+      ],
+      "article_links_sample": 5
+    },
+    {
+      "name": "中国教育在线",
+      "url": "https://www.eol.cn/news/yaowen/",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 98041,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "高招服务",
+          "url": "https://www.eol.cn/e_gx/zt/zsgk.html"
+        },
+        {
+          "title": "研招服务",
+          "url": "https://www.eol.cn/e_ky/zt/yindao/pc/index_pc.html"
+        },
+        {
+          "title": "校长新声",
+          "url": "https://www.eol.cn/syzt/xzxs/index.shtml"
+        },
+        {
+          "title": "国际丝绸组织在杭州成立 浙江理工大学校长陈文兴任主席并发布倡议",
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261123_2797790.shtml"
+        },
+        {
+          "title": "详细",
+          "url": "https://www.eol.cn/news/yaowen/202611/t20261123_2797790.shtml"
+        }
+      ],
+      "article_links_sample": 5
+    }
+  ],
+  "new_columns": [
+    {
+      "name": "广东省教育考试院",
+      "url": "https://eea.gd.gov.cn/tzgg/index.html",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 18854,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "首页",
+          "url": "https://eea.gd.gov.cn/index.html"
+        },
+        {
+          "title": "要闻动态",
+          "url": "https://eea.gd.gov.cn/hdxz_xzzx/index.html"
+        },
+        {
+          "title": "报名报考",
+          "url": "https://eea.gd.gov.cn/bmbk/index.html"
+        },
+        {
+          "title": "政务公开",
+          "url": "https://eea.gd.gov.cn/zwgk/index.html"
+        },
+        {
+          "title": "广东省教育考试院关于广东省2027年普通高校招生艺术类专业省统考考试时间安排的通知",
+          "url": "https://eea.gd.gov.cn/tzgg/content/post_4982050.html"
+        }
+      ],
+      "article_links_sample": 5,
+      "robots": {
+        "http": 404,
+        "explicit_allow_all": false,
+        "snippet": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not Found</h1></center>\r <hr><center>nginx</center>\r </body>\r </html>\r "
+      }
+    },
+    {
+      "name": "浙江省教育考试院",
+      "url": "https://www.zjzs.net/col/col156",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 21922,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "首页",
+          "url": "https://www.zjzs.net/index.html"
+        },
+        {
+          "title": "考试招生",
+          "url": "https://www.zjzs.net/col/col3/index.html"
+        },
+        {
+          "title": "通知公告",
+          "url": "https://www.zjzs.net/col/col156/index.html"
+        },
+        {
+          "title": "招考资讯",
+          "url": "https://www.zjzs.net/col/col155/index.html"
+        },
+        {
+          "title": "通知公告",
+          "url": "https://www.zjzs.net/col/col156/index.html"
+        }
+      ],
+      "article_links_sample": 5,
+      "robots": {
+        "http": 404,
+        "explicit_allow_all": false,
+        "snippet": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not Found</h1></center>\r <hr><center>nginx/1.22.1</center>\r </body>\r </html>\r "
+      }
+    },
+    {
+      "name": "北京教育考试院",
+      "url": "https://www.bjeea.cn/html/bjeeagg",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 22584,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "考试院简介",
+          "url": "https://www.bjeea.cn/html/introduce/2020/1127/77048.html"
+        },
+        {
+          "title": "中考中招",
+          "url": "https://www.bjeea.cn/html/zkzz/index.html"
+        },
+        {
+          "title": "高中学考合格考",
+          "url": "https://www.bjeea.cn/html/hk/index.html"
+        },
+        {
+          "title": "高考高招",
+          "url": "https://www.bjeea.cn/html/gkgz/index.html"
+        },
+        {
+          "title": "研考研招",
+          "url": "https://www.bjeea.cn/html/yk/index.html"
+        }
+      ],
+      "article_links_sample": 5,
+      "robots": {
+        "http": 404,
+        "explicit_allow_all": false,
+        "snippet": "<html>\r <head><title>404 Not Found</title></head>\r <body>\r <center><h1>404 Not Found</h1></center>\r <hr><center>nginx</center>\r </body>\r </html>\r "
+      }
+    },
+    {
+      "name": "上海市教育考试院",
+      "url": "https://www.shmeea.edu.cn/page/08000/",
+      "http": 200,
+      "encoding": "utf-8",
+      "bytes": 22479,
+      "waf_signs": [],
+      "sample_links": [
+        {
+          "title": "2026年上海市中等职业学校学业水平考试信息技术机考模拟练习平台上线通知",
+          "url": "https://www.shmeea.edu.cn/page/08000/20261123/20701.html"
+        },
+        {
+          "title": "上海市教育考试院关于做好2027年1月上海市普通高中学业水平合格性考试报名工作的通知（沪教考院中招〔",
+          "url": "https://www.shmeea.edu.cn/page/08000/20261120/20698.html"
+        },
+        {
+          "title": "上海市2027年普通高校招生表（导）演类-戏剧影视表演方向、表（导）演类-戏剧影视导演方向专业统考考",
+          "url": "https://www.shmeea.edu.cn/page/08000/20261120/20692.html"
+        },
+        {
+          "title": "上海市2027年普通高校招生舞蹈类专业统考考前提示",
+          "url": "https://www.shmeea.edu.cn/page/08000/20261120/20693.html"
+        },
+        {
+          "title": "2026年下半年高等教育自学考试免考和毕业申请工作即将开始",
+          "url": "https://www.shmeea.edu.cn/page/08000/20261118/20687.html"
+        }
+      ],
+      "article_links_sample": 5,
+      "robots": {
+        "http": 200,
+        "explicit_allow_all": true,
+        "snippet": "User-agent: *\r \r Allow: /\r "
+      }
+    },
+    {
+      "name": "中国人事考试网",
+      "url": "http://www.cpta.com.cn/notice.html",
+      "http": 405,
+      "encoding": "utf-8",
+      "bytes": 2657,
+      "waf_signs": [
+        "acw_tc"
+      ],
+      "article_links_sample": 0,
+      "robots": {
+        "http": 405,
+        "explicit_allow_all": false,
+        "snippet": "<!doctypehtml><html lang=\"zh-cn\"><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\"content=\"IE=edge,chrome=1\"><meta name=\"data-spm\"content=\"a3c0e\"><title>405</title><style>a,body,div,h2,html,p{m"
+      }
+    }
+  ],
+  "old_candidates": [
+    {
+      "site": "中国教育考试网",
+      "url": "https://www.neea.edu.cn/html1/category/16093/615-1.htm",
+      "title": "考试资讯",
+      "http_today": 200,
+      "alive": true,
+      "text_chars_today": 622
+    },
+    {
+      "site": "中国教育考试网",
+      "url": "https://www.neea.edu.cn/html1/category/1508/151-1.htm",
+      "title": "公示公告",
+      "http_today": 200,
+      "alive": true,
+      "text_chars_today": 1053
+    },
+    {
+      "site": "四六级考试网",
+      "url": "https://cet.neea.edu.cn/html1/category/16093/615-1.htm",
+      "title": "考试资讯",
+      "http_today": 200,
+      "alive": true,
+      "text_chars_today": 622
+    },
+    {
+      "site": "四六级考试网",
+      "url": "https://cet.neea.edu.cn/html1/report/2611/25-1.htm",
+      "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+      "http_today": 200,
+      "alive": true,
+      "text_chars_today": 1170
+    },
+    {
+      "site": "NCRE考试网",
+      "url": "https://ncre.neea.edu.cn/html1/category/16093/615-1.htm",
+      "title": "考试资讯",
+      "http_today": 200,
+      "alive": true,
+      "text_chars_today": 622
+    },
+    {
+      "site": "NCRE考试网",
+      "url": "https://ncre.neea.edu.cn/html1/report/2611/25-1.htm",
+      "title": "2027年全国硕士研究生招生考试安全工作视频会召开",
+      "http_today": 200,
+      "alive": true,
+      "text_chars_today": 1170
+    }
+  ]
+}

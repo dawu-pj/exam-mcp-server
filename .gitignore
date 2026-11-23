@@ -26,3 +26,6 @@ data/*.log
 Thumbs.db
 .DS_Store
 data/oauth_probe/
+
+# 扩量调查的临时实验正文（复现脚本 src/simulate_expansion.py + 留痕 JSON 已入库，正文不重复占库）
+data/expansion_sim/
