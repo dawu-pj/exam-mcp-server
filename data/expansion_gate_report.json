@@ -1,0 +1,84 @@
+{
+  "gate_at": "2026-11-24 00:12:24",
+  "note": "方案B入库门禁：doc_hit@1>=80% 且回归哨兵 Top-3 才准入库；未写 data/clean",
+  "threshold": 0.8,
+  "alpha": 0.5,
+  "before_docs": 22,
+  "after_docs": 37,
+  "added": 15,
+  "before_doc_hit@1": 0.8666666666666667,
+  "before_doc_hit@3": 1.0,
+  "after_doc_hit@1": 0.8,
+  "after_doc_hit@3": 1.0,
+  "changed": [
+    {
+      "q": "教学〔2025〕2号文件是关于什么的？",
+      "before": 1,
+      "after": 3
+    }
+  ],
+  "sentinels": [
+    {
+      "q": "2026年度国家教育考试科研规划课题正式立项名单公布了吗？",
+      "expect_doc_id": "0346e666a4d0e849",
+      "before": 3,
+      "after": 3
+    },
+    {
+      "q": "2025年度国家教育考试科研规划课题正式立项名单是哪些？",
+      "expect_doc_id": "60eda603e52fc57f",
+      "before": 2,
+      "after": 2
+    }
+  ],
+  "sentinel_ok": true,
+  "negatives": [
+    {
+      "q": "教师资格证考试什么时候报名？",
+      "top1": {
+        "doc_id": "a41094516983eb47",
+        "title": "2027年全国硕士研究生考试报名人数公布：347万人，比2026年的343万人增加4万人。",
+        "score": 5.115
+      },
+      "note": "neg_reject_proxy 恒真（负例无正确文档）；Top-1 命中是 evaluate.py 已注明的语义局限，非门禁指标"
+    },
+    {
+      "q": "雅思考试2026年的报名条件是什么？",
+      "top1": {
+        "doc_id": "a41094516983eb47",
+        "title": "2027年全国硕士研究生考试报名人数公布：347万人，比2026年的343万人增加4万人。",
+        "score": 3.678
+      },
+      "note": "neg_reject_proxy 恒真（负例无正确文档）；Top-1 命中是 evaluate.py 已注明的语义局限，非门禁指标"
+    },
+    {
+      "q": "2028年全国硕士研究生考试报名人数是多少？",
+      "top1": {
+        "doc_id": "a41094516983eb47",
+        "title": "2027年全国硕士研究生考试报名人数公布：347万人，比2026年的343万人增加4万人。",
+        "score": 9.494
+      },
+      "note": "neg_reject_proxy 恒真（负例无正确文档）；Top-1 命中是 evaluate.py 已注明的语义局限，非门禁指标"
+    },
+    {
+      "q": "法律职业资格考试的主观题时间是什么时候？",
+      "top1": {
+        "doc_id": "c3aa56ed08bf4eaf",
+        "title": "广东省2026年下半年中小学教师资格考试面试通告",
+        "score": 4.5
+      },
+      "note": "neg_reject_proxy 恒真（负例无正确文档）；Top-1 命中是 evaluate.py 已注明的语义局限，非门禁指标"
+    },
+    {
+      "q": "2024年度国家教育考试科研规划课题立项名单？",
+      "top1": {
+        "doc_id": "6b4ac6481069e06b",
+        "title": "关于2025年度国家教育考试科研规划课题拟立项名单的公示",
+        "score": 17.688
+      },
+      "note": "neg_reject_proxy 恒真（负例无正确文档）；Top-1 命中是 evaluate.py 已注明的语义局限，非门禁指标"
+    }
+  ],
+  "decision": "PASS",
+  "reason": "doc_hit@1 达标且哨兵未掉出 Top-3，可入库"
+}

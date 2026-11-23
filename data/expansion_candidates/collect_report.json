@@ -1,0 +1,177 @@
+{
+  "collected_at": "2026-11-24T00:10:57",
+  "note": "方案B临时候选：未入库、未改主链路；门禁 doc_hit@1>=80% 才允许复制进 data/clean",
+  "ua": "StudyDeskResearchBot/0.1 (public exam-info pages; educational research; contact: local)",
+  "min_chars": 500,
+  "sleep_sec": 1.0,
+  "existing_docs": 22,
+  "sites": [
+    {
+      "name": "上海市教育考试院",
+      "column": "https://www.shmeea.edu.cn/page/08000/",
+      "note": "robots 显式 User-agent:*/Allow:/，合规最干净，优先",
+      "pages": [
+        "https://www.shmeea.edu.cn/page/08000/"
+      ],
+      "candidate_links": 9,
+      "saved": [
+        {
+          "doc_id": "c350aeec74be9f61",
+          "title": "上海市教育考试院关于做好2027年1月上海市普通高中学业水平合格性考试报名工作的通知（沪教考院中招〔2026〕18号）",
+          "text_chars": 2927
+        },
+        {
+          "doc_id": "13ef40fbeba2dc6f",
+          "title": "上海市2027年普通高校招生表（导）演类-戏剧影视表演方向、表（导）演类-戏剧影视导演方向专业统考考前提示",
+          "text_chars": 1574
+        },
+        {
+          "doc_id": "14bc15bcae05e53c",
+          "title": "上海市2027年普通高校招生舞蹈类专业统考考前提示",
+          "text_chars": 1226
+        },
+        {
+          "doc_id": "19f87d9ccf471e6a",
+          "title": "2026年下半年高等教育自学考试免考和毕业申请工作即将开始",
+          "text_chars": 1265
+        },
+        {
+          "doc_id": "94c361c9190dab0b",
+          "title": "2026年12月普通话水平测试报名即将开始",
+          "text_chars": 2234
+        },
+        {
+          "doc_id": "c875bad473fcbbdb",
+          "title": "上海市2027年普通高校招生美术与设计类专业统考考前提示",
+          "text_chars": 2206
+        },
+        {
+          "doc_id": "0728b21cbbe09e94",
+          "title": "上海市2026年成人高校招生院校志愿网上二次确认须知及专业目录",
+          "text_chars": 634
+        }
+      ],
+      "skipped": [
+        {
+          "title": "2026年上海市中等职业学校学业水平考试信息技术机考模拟练习平台上线通知",
+          "reason": "正文仅 386 字"
+        },
+        {
+          "title": "上海市2026年成人高校招生最低录取控制分数线",
+          "reason": "正文仅 207 字"
+        }
+      ],
+      "waf": false,
+      "column_http": 200
+    },
+    {
+      "name": "广东省教育考试院",
+      "column": "https://eea.gd.gov.cn/tzgg/index.html",
+      "note": "排除 /index.html 导航页",
+      "pages": [
+        "https://eea.gd.gov.cn/tzgg/index.html",
+        "https://eea.gd.gov.cn/tzgg/index_17.html",
+        "https://eea.gd.gov.cn/tzgg/index_2.html"
+      ],
+      "candidate_links": 95,
+      "saved": [
+        {
+          "doc_id": "5ca8759da738b8f0",
+          "title": "广东省招生委员会办公室关于做好2027年度民航在广东省招收高中毕业生飞行学员工作的通知",
+          "text_chars": 3124
+        },
+        {
+          "doc_id": "a709c37b0d5576f6",
+          "title": "普通高校戏曲类专业招生省际联考工作协调小组关于做好2027年普通高等学校戏曲类本科专业招生省际联考工作的通知",
+          "text_chars": 2120
+        },
+        {
+          "doc_id": "cc020446ebcd391c",
+          "title": "广东省教育考试院关于2026年成人高考成绩公布有关工作安排的通知",
+          "text_chars": 675
+        },
+        {
+          "doc_id": "31732bacf2c682c0",
+          "title": "广东省教育考试院关于做好2027年第一次广东省中等职业技术教育专业技能课程考试报考工作的通知",
+          "text_chars": 2654
+        },
+        {
+          "doc_id": "58acbb1266b812eb",
+          "title": "广东省招生委员会办公室关于印发广东省2027年普通高校体育类专业考试招生办法的通知",
+          "text_chars": 3559
+        },
+        {
+          "doc_id": "c3aa56ed08bf4eaf",
+          "title": "广东省2026年下半年中小学教师资格考试面试通告",
+          "text_chars": 3400
+        },
+        {
+          "doc_id": "49937a9c2d0682cd",
+          "title": "广东省招生委员会 广东省卫生健康委员会关于做好广东省2027年普通高校招生体检工作的通知",
+          "text_chars": 2090
+        },
+        {
+          "doc_id": "b267b2cdb5daaccb",
+          "title": "广东省招生委员会关于印发《广东省2027年普通高校艺术类专业考试招生办法》的通知",
+          "text_chars": 5753
+        }
+      ],
+      "skipped": [
+        {
+          "title": "广东省教育考试院关于广东省2027年普通高校招生艺术类专业省统考考试时间安排的通",
+          "reason": "正文仅 241 字"
+        },
+        {
+          "title": "广东省招生委员会关于公布广东省2026年各类成人高校招生录取最低分数线的通知",
+          "reason": "正文仅 379 字"
+        },
+        {
+          "title": "广东省教育考试院关于公布广东省2027年普通高等学校招收中等职业学校毕业生统一考",
+          "reason": "正文仅 264 字"
+        },
+        {
+          "title": "广东省2026年成人高校招生专业计划公布",
+          "reason": "正文仅 297 字"
+        },
+        {
+          "title": "广东省教育考试院关于印发广东省2027年普通高校招生体育类专业省统考科目和要求的",
+          "reason": "正文仅 271 字"
+        },
+        {
+          "title": "广东省教育考试院关于印发广东省2027年普通高校招生艺术类专业省统考科目考试要求",
+          "reason": "正文仅 234 字"
+        }
+      ],
+      "waf": false,
+      "column_http": 200
+    },
+    {
+      "name": "浙江省教育考试院",
+      "column": "https://www.zjzs.net/col/col156",
+      "note": "通知公告栏目 col156；art_*.html 才是文章",
+      "pages": [
+        "https://www.zjzs.net/col/col156"
+      ],
+      "candidate_links": 0,
+      "saved": [],
+      "skipped": [],
+      "waf": false,
+      "column_http": 200
+    },
+    {
+      "name": "北京教育考试院",
+      "column": "https://www.bjeea.cn/html/bjeeagg",
+      "note": "排除 /index.html 与 query.bjiea.cn 报名系统",
+      "pages": [
+        "https://www.bjeea.cn/html/bjeeagg"
+      ],
+      "candidate_links": 0,
+      "saved": [],
+      "skipped": [],
+      "waf": false,
+      "column_http": 200
+    }
+  ],
+  "saved_total": 15,
+  "skipped_total": 8
+}

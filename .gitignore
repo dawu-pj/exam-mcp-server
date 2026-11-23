@@ -27,5 +27,11 @@ Thumbs.db
 .DS_Store
 data/oauth_probe/
 
-# 扩量调查的临时实验正文（复现脚本 src/simulate_expansion.py + 留痕 JSON 已入库，正文不重复占库）
+# 扩量调查/实施的临时正文与索引副本（复现脚本 + 留痕 JSON 已入库，正文不重复占库）
 data/expansion_sim/
+data/expansion_gate/
+data/expansion_candidates/*.md
+data/expansion_candidates/*.meta.json
+# 入库前 22 篇旧库快照（仅用于反向泄漏复核，可由 git 历史恢复；不入部署包）
+data/clean_baseline/
+data/expansion_digest.md

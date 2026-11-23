@@ -1,0 +1,76 @@
+{
+  "note": "新文档 holdout：反向泄漏检查 + alpha 确证不更差（非第三次选参）",
+  "original_n": 50,
+  "valid_n": 50,
+  "leaked": [],
+  "per_alpha": {
+    "0.0": {
+      "n_positive": 45,
+      "n_negative": 5,
+      "doc_hit@1": 1.0,
+      "doc_hit@3": 1.0,
+      "doc_hit@5": 1.0,
+      "mrr@5": 1.0,
+      "site_hit@1": 1.0,
+      "site_vs_doc_gap": 0.0,
+      "site_trap_doc_hit@1": 1.0,
+      "neg_reject_proxy": 1.0,
+      "citation_rate": 1.0
+    },
+    "0.3": {
+      "n_positive": 45,
+      "n_negative": 5,
+      "doc_hit@1": 1.0,
+      "doc_hit@3": 1.0,
+      "doc_hit@5": 1.0,
+      "mrr@5": 1.0,
+      "site_hit@1": 1.0,
+      "site_vs_doc_gap": 0.0,
+      "site_trap_doc_hit@1": 1.0,
+      "neg_reject_proxy": 1.0,
+      "citation_rate": 1.0
+    },
+    "0.5": {
+      "n_positive": 45,
+      "n_negative": 5,
+      "doc_hit@1": 0.9777777777777777,
+      "doc_hit@3": 1.0,
+      "doc_hit@5": 1.0,
+      "mrr@5": 0.9888888888888889,
+      "site_hit@1": 0.9777777777777777,
+      "site_vs_doc_gap": 0.0,
+      "site_trap_doc_hit@1": 1.0,
+      "neg_reject_proxy": 1.0,
+      "citation_rate": 1.0
+    },
+    "0.7": {
+      "n_positive": 45,
+      "n_negative": 5,
+      "doc_hit@1": 0.9777777777777777,
+      "doc_hit@3": 1.0,
+      "doc_hit@5": 1.0,
+      "mrr@5": 0.9888888888888889,
+      "site_hit@1": 0.9777777777777777,
+      "site_vs_doc_gap": 0.0,
+      "site_trap_doc_hit@1": 1.0,
+      "neg_reject_proxy": 1.0,
+      "citation_rate": 1.0
+    },
+    "1.0": {
+      "n_positive": 45,
+      "n_negative": 5,
+      "doc_hit@1": 0.8888888888888888,
+      "doc_hit@3": 0.9555555555555556,
+      "doc_hit@5": 0.9777777777777777,
+      "mrr@5": 0.9277777777777778,
+      "site_hit@1": 0.8888888888888888,
+      "site_vs_doc_gap": 0.0,
+      "site_trap_doc_hit@1": 0.9,
+      "neg_reject_proxy": 1.0,
+      "citation_rate": 1.0
+    }
+  },
+  "best_alpha_on_new_holdout": 0.0,
+  "gap_to_best": 0.022222222222222254,
+  "confirmed": true
+}

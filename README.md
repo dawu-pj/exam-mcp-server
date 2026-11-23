@@ -2,9 +2,9 @@
 
 给大模型供信息的爬虫 MVP —— Python 版，本机开发。
 
-> ✅ **状态（2026-11-19）：MVP 闭环 + MCP 工具层 + 部署/日常入口已跑通**——5 站真实采集 22 篇、脱敏去重落盘、BM25 检索评估 Top-1 命中率 100%；MCP Server 4 工具 + 双传输 + 5 层安全闸门全部实测通过。详见 `MVP交付说明.md`、`MCP接入指南.md`（大模型调用）、`部署与日常使用速查.md`（装+用入口）、**`零环境部署指南.md`**（不装 Python，推 GitHub 上云 / 国内云函数 / 便携 exe / WSL2 四条路）。
+> ✅ **状态（2026-11-24）：MVP + MCP + 受控扩量全部闭环**——7 站真实采集 **37 篇**（原 5 站 22 篇 + 上海/广东不同质省级公告 15 篇）、脱敏去重落盘；MCP Server 4 工具 + 双传输 + 5 层安全闸门全部实测通过。主集 doc_hit@1 80%/@3 100%（扩量门禁 ≥80% 达标），新文档 holdout 50 题 @1 98%，旧 holdout α=0.5 仍 100%。详见 `MVP交付说明.md`、`MCP接入指南.md`（大模型调用）、`部署与日常使用速查.md`（装+用入口）、**`零环境部署指南.md`**（不装 Python，推 GitHub 上云 / 国内云函数 / 便携 exe / WSL2 四条路）。
 >
-> ☁️ **免安装上云已备好**：`app.py`（ASGI 入口，`mcp.http_app(stateless_http=True)`）+ `.gitignore`（缓存/venv 排除，保留 22 篇数据）。uvicorn 起服务 + 客户端经 `/mcp` 调用已实测通过。FastMCP Gateway 入口填 `src/mcp_server.py:mcp`。
+> ☁️ **免安装上云已备好**：`app.py`（ASGI 入口，`mcp.http_app(stateless_http=True)`）+ `.gitignore`（缓存/venv 排除，保留 37 篇数据）。uvicorn 起服务 + 客户端经 `/mcp` 调用已实测通过。FastMCP Gateway 入口填 `src/mcp_server.py:mcp`。
 >
 > 📄 **许可证：MIT**（见 `LICENSE`）。依赖链全为 MIT/Apache-2.0/BSD 宽松许可，无 GPL/AGPL 传染性。
 >
@@ -39,7 +39,8 @@ powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一�
 .\.venv\Scripts\python.exe -m scrapy crawl exam               # 真实采集（限速约 20 秒）
 .\.venv\Scripts\python.exe tests\evaluate.py                  # 检索评估（主集 20 题）
 .\.venv\Scripts\python.exe tests\evaluate_field_weight.py      # 字段加权 A/B + LOOCV 复核
-.\.venv\Scripts\python.exe tests\validate_alpha_holdout.py     # alpha 独立复核（holdout 18 题）
+.\.venv\Scripts\python.exe tests\validate_alpha_holdout.py     # alpha 独立复核（旧 holdout 18 题）
+.\.venv\Scripts\python.exe tests\validate_expansion_holdout.py # 新文档 holdout 50 题 + 反向泄漏 + α 确证
 .\.venv\Scripts\python.exe src\retrieve.py "四六级报名"        # 手动查询
 ```
 
@@ -49,7 +50,7 @@ powershell -ExecutionPolicy Bypass -File setup.ps1              # 新机器一�
 
 > **技术认知储备**：`技术认知地图与能力边界.md`——把多轮调研的能力手段、法律定价、自身现状系统沉淀，回答"如果场景变了该怎么做、可以不做但不能不知道"。含能力—风险光谱、13ft 源码逐项裁定、数据源侦察成果、解锁决策 Gate、法律锚点、调研资产索引。立场是认知地图而非操作手册：记录原理与代价，不写绕过防护的配方。
 
-> **扩量调查（2026-11-23，待拍板）**：`受控扩量调查与实施方案.md`——开发前调查，未入库未改主链路。核心发现：模拟加 12 篇研招网同质公告后 doc_hit@1 **87%→67%**（调 α 天花板 73%），实证"同质堆量伤精确排序"。含数据源复核（人事网仍 405、上海 robots 显式允许）、模拟实验全文、Scrapy 增量官方依据、holdout 方法论（目标 45–50 题）。推荐**方案 B：只抓不同质的省级考试院公告 + 模拟门禁（<80% 不入库）**，待大哥拍板 A/B/C。
+> **受控扩量（2026-11-23 调查 → 11-24 实施完成）**：`受控扩量调查与实施方案.md`——调查实证"同质堆量伤精确排序"（+12 篇研招政策 87%→67%，调 α 天花板仅 73%）；大哥拍板方案 B 后按第八节执行：抓上海/广东 **15 篇不同质省级公告**，门禁 87%→80%（≥80% 达标）才入库，22→37 篇；新文档独立 holdout 50 题（反向泄漏检查 0 作废）@1 98%，α=0.5 确证不更差。浙江/北京因 JS 动态渲染、人事网因 405+WAF 均主动不抓。复现入口：`src/collect_provincial.py` → `src/gate_expansion.py` → `src/promote_expansion.py --apply` → `tests/validate_expansion_holdout.py`。
 
 ## 环境状态（2026-11-19 实测就绪）
 

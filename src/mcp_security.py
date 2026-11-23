@@ -1,7 +1,7 @@
 """MCP 爬虫安全防御层：把爬取能力暴露给大模型前的安全闸门。
 
 落地《MCP爬虫工具集成调研报告》第5节防御清单：
-1. 出网白名单 —— 唯一允许访问的是已实测的 5 个境内考试站（同时守住合规边界 + SSRF）
+1. 出网白名单 —— 唯一允许访问的是已实测的 7 个境内考试站（同时守住合规边界 + SSRF）
 2. SSRF 防护 —— 阻断私网 / localhost / 云元数据 / 非白名单端口与协议
 3. 不可信内容处理 —— 剥离隐藏文本与控制字符，返回值明确标注"外部数据非指令"
 4. 幂等缓存 —— 同一 URL 不重复请求（agent 重试比人频繁，防把站点抓爆）
@@ -26,13 +26,18 @@ from urllib.robotparser import RobotFileParser
 
 import requests
 
-# ---------- 1. 出网白名单：与 exam_spider.SITES 保持单一口径 ----------
+# ---------- 1. 出网白名单：已实测的 7 站（原 5 站 + 方案 B 新增上海/广东） ----------
+# 新增两站依据：上海 robots 显式 Allow:/；广东 robots 404 未声明限制；
+# 均为公开静态页，已实测明示 UA + 1 req/s 可抓。浙江/北京为 JS 渲染页、
+# 人事网 405+WAF，均不纳入（见 data/zero_sites_diag*.json / source_recheck.json）。
 ALLOWED_HOSTS: frozenset[str] = frozenset({
     "www.neea.edu.cn",
     "cet.neea.edu.cn",
     "yz.chsi.com.cn",
     "ncre.neea.edu.cn",
     "www.eol.cn",
+    "www.shmeea.edu.cn",
+    "eea.gd.gov.cn",
 })
 
 # 明示身份（与 Scrapy USER_AGENT 一致）

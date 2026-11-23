@@ -1,0 +1,149 @@
+{
+  "note": "两站 0 候选诊断：只取栏目页链接样本，不抓正文",
+  "sites": [
+    {
+      "name": "浙江省教育考试院",
+      "url": "https://www.zjzs.net/col/col156",
+      "http": 200,
+      "html_chars": 18132,
+      "title": "浙江省教育考试院官网 通知公告",
+      "same_domain_links": 6,
+      "samples": [
+        {
+          "text": "首页",
+          "href": "https://www.zjzs.net/index.html"
+        },
+        {
+          "text": "考试招生",
+          "href": "https://www.zjzs.net/col/col3/index.html"
+        },
+        {
+          "text": "通知公告",
+          "href": "https://www.zjzs.net/col/col156/index.html"
+        },
+        {
+          "text": "招考资讯",
+          "href": "https://www.zjzs.net/col/col155/index.html"
+        },
+        {
+          "text": "通知公告",
+          "href": "https://www.zjzs.net/col/col156/index.html"
+        },
+        {
+          "text": "阳光公示",
+          "href": "https://www.zjzs.net/col/col157/index.html"
+        }
+      ]
+    },
+    {
+      "name": "北京教育考试院",
+      "url": "https://www.bjeea.cn/html/bjeeagg",
+      "http": 200,
+      "html_chars": 19731,
+      "title": "北京教育考试院",
+      "same_domain_links": 52,
+      "samples": [
+        {
+          "text": "首页",
+          "href": "https://www.bjeea.cn/"
+        },
+        {
+          "text": "考试院简介",
+          "href": "https://www.bjeea.cn/html/introduce/2020/1127/77048.html"
+        },
+        {
+          "text": "中考中招",
+          "href": "https://www.bjeea.cn/html/zkzz/index.html"
+        },
+        {
+          "text": "高中学考合格考",
+          "href": "https://www.bjeea.cn/html/hk/index.html"
+        },
+        {
+          "text": "高考高招",
+          "href": "https://www.bjeea.cn/html/gkgz/index.html"
+        },
+        {
+          "text": "研考研招",
+          "href": "https://www.bjeea.cn/html/yk/index.html"
+        },
+        {
+          "text": "成考成招",
+          "href": "https://www.bjeea.cn/html/ckcz/index.html"
+        },
+        {
+          "text": "自学考试",
+          "href": "https://www.bjeea.cn/html/selfstudy/index.html"
+        },
+        {
+          "text": "社会考试",
+          "href": "https://www.bjeea.cn/html/fxlks/index.html"
+        },
+        {
+          "text": "考试院首页",
+          "href": "https://www.bjeea.cn/"
+        },
+        {
+          "text": "通知公告",
+          "href": "https://www.bjeea.cn/html/bjeeagg/index.html"
+        },
+        {
+          "text": "2027年北京市初中学业水平考试网上报名（已结束）",
+          "href": "https://www.bjeea.cn/html/zkzz/tzgg/2026/1107/88452.html"
+        },
+        {
+          "text": "关于受理北京市2026年下半年中小学教师资格考试（笔试）成绩复核申请的通知",
+          "href": "https://www.bjeea.cn/html/fxlks/shdjks/tzgg/2026/1102/88449.html"
+        },
+        {
+          "text": "2026年北京市成人高考准考证打印",
+          "href": "https://www.bjeea.cn/html/ckcz/tzgg/2026/1010/88386.html"
+        },
+        {
+          "text": "北京市2027年全国硕士研究生招生考试网上报名公告",
+          "href": "https://www.bjeea.cn/html/yk/tzgg/2026/1007/88385.html"
+        },
+        {
+          "text": "2026年北京市成人高校招生考试报名网上缴费(已结束)",
+          "href": "https://www.bjeea.cn/html/ckcz/tzgg/2026/0908/88322.html"
+        },
+        {
+          "text": "2026年北京市成人高校招生考试网上报名(已结束)",
+          "href": "https://www.bjeea.cn/html/ckcz/tzgg/2026/0824/88311.html"
+        },
+        {
+          "text": "北京市中小学教师资格考试（笔试）考场规则",
+          "href": "https://www.bjeea.cn/html/fxlks/shdjks/kcgz/2026/0811/88298.html"
+        },
+        {
+          "text": "2026年下半年北京市中小学教师资格考试（笔试）考前公告",
+          "href": "https://www.bjeea.cn/html/fxlks/shdjks/tzgg/2026/0811/88297.html"
+        },
+        {
+          "text": "2026年北京市中招征集志愿填报（已结束）",
+          "href": "https://www.bjeea.cn/html/zkzz/tzgg/2026/0727/88291.html"
+        },
+        {
+          "text": "参加2026年北京市中招志愿征集录取的学校名单",
+          "href": "https://www.bjeea.cn/html/zkzz/tzgg/2026/0726/88289.html"
+        },
+        {
+          "text": "2026年北京市高级中等学校招生网上志愿填报",
+          "href": "https://www.bjeea.cn/html/zkzz/tzgg/2026/0712/88276.html"
+        },
+        {
+          "text": "2026年北京市中招各区分数段人数统计",
+          "href": "https://www.bjeea.cn/html/zkzz/tzgg/2026/0708/88260.html"
+        },
+        {
+          "text": "关于《北京市2026年普通高等学校招生专业目录》补充说明（本科部分）",
+          "href": "https://www.bjeea.cn/html/gkgz/tzgg/2026/0625/88244.html"
+        },
+        {
+          "text": "北京市2026年普通高等学校招生录取最低控制分数线",
+          "href": "https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88239.html"
+        }
+      ]
+    }
+  ]
+}

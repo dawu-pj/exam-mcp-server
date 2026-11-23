@@ -1,0 +1,38 @@
+{
+  "collected_at": "2026-11-24T00:13:05",
+  "note": "方案B临时候选：未入库、未改主链路；门禁 doc_hit@1>=80% 才允许复制进 data/clean",
+  "ua": "StudyDeskResearchBot/0.1 (public exam-info pages; educational research; contact: local)",
+  "min_chars": 500,
+  "sleep_sec": 1.0,
+  "existing_docs": 22,
+  "sites": [
+    {
+      "name": "浙江省教育考试院",
+      "column": "https://www.zjzs.net/col/col156/index.html",
+      "note": "col156 无斜杠地址是导航骨架页；文章列表在 /col/col156/index.html",
+      "pages": [
+        "https://www.zjzs.net/col/col156/index.html"
+      ],
+      "candidate_links": 0,
+      "saved": [],
+      "skipped": [],
+      "waf": false,
+      "column_http": 200
+    },
+    {
+      "name": "北京教育考试院",
+      "column": "https://www.bjeea.cn/html/bjeeagg/index.html",
+      "note": "bjeeagg 无斜杠地址是导航页；文章路径可能多一层栏目段（如 /html/zkzz/tzgg/2026/1107/88452.html）",
+      "pages": [
+        "https://www.bjeea.cn/html/bjeeagg/index.html"
+      ],
+      "candidate_links": 0,
+      "saved": [],
+      "skipped": [],
+      "waf": false,
+      "column_http": 200
+    }
+  ],
+  "saved_total": 0,
+  "skipped_total": 0
+}
