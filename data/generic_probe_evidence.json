@@ -1,0 +1,31 @@
+{
+  "probed_at": "2026-11-24",
+  "purpose": "通用化决策的一手证据：发现层可用性 + 中文正文抽取器在陌生站点的静默失败",
+  "note": "实测脚本 src/probe_discovery.py / src/probe_extract_control.py / src/probe_extract_ab.py；仅探测不入库、不留正文",
+  "environment": {
+    "python": "3.12.16",
+    "network": "本机经代理出口；沙箱 WebFetch 对部分域名不通（与实测一致）",
+    "ua": "StudyDeskResearchBot/0.1 (public info research; educational)"
+  },
+  "discovery_layer": [
+    {"target": "Bing HTML 搜索", "status": 200, "bytes": 106796, "result_links_extracted": true,
+     "finding": "可直连并从 h2 a 提取结果链接；但结果是泛化内容、非考试公告，且直接爬搜索引擎结果页踩 ToS"},
+    {"target": "DuckDuckGo HTML 搜索", "status": null, "error": "ProxyError",
+     "finding": "本机代理出口不通，不能作为发现层依赖"},
+    {"target": "百度搜索", "status": 200, "bytes": 2689, "result_links_extracted": false,
+     "finding": "返回空壳/反爬页，无结果链接"}
+  ],
+  "extraction_ab": [
+    {"site": "已验证站 neea.edu.cn (html1/report/2609/27-1.htm)", "status": 200, "bytes": 34379,
+     "trafilatura_chars": 1028, "preview": "2026年度国家教育考试科研规划课题立项名单公布 发布时间…"},
+    {"site": "全新站 gov.cn 政策正文 (content_7085102.htm)", "status": 200, "bytes": 27455,
+     "trafilatura_chars": 62, "preview": "首页 | 简 | 繁 | EN | 登录 … https://www.gov.cn/",
+     "finding": "HTTP 200 但正文抽取器只返回导航残渣——静默失败，是通用化最大质量风险"},
+    {"site": "上海考试院文章", "status": 404, "bytes": 146, "finding": "该 URL 已失效，属正常"}
+  ],
+  "conclusion": [
+    "发现层：搜索引擎结果页直连不稳定且踩 ToS，应走正规搜索 API 或自托管元搜索；本机实测只证明'技术上能拿到链接'，不证明可持续。",
+    "抽取层：同一抽取器在适配站与陌生站差异 1028 vs 62 字符，通用抓取必须加'抽取质量闸门'（正文长度/导航占比/关键词命中），低于阈值判定为失败而非成功。",
+    "这两条是'通用化'相对'定向采集'新增的核心工程量，不是换个 URL 参数就能解决。"
+  ]
+}
