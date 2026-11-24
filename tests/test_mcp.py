@@ -42,7 +42,11 @@ async def _run_cases():
         tools = await c.list_tools()
         names = [t.name for t in tools]
         print(f"[1] 工具注册: {names}")
-        assert set(names) == {"query_local", "search_site", "fetch_page", "research"}, "工具集不符"
+        expected = {
+            "query_local", "search_site", "fetch_page", "research",
+            "web_search", "web_fetch", "domain_risk_check", "domain_approve",
+        }
+        assert set(names) == expected, f"工具集不符：{set(names) ^ expected}"
 
         # M1 query_local
         r = await c.call_tool("query_local", {"query": "四六级报名条件", "top_k": 3})

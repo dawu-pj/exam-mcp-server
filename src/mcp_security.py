@@ -86,8 +86,22 @@ def allow_url(url: str) -> tuple[bool, str]:
         return False, "URL 无主机名"
 
     # 白名单是主防线：非白名单域名一律拒绝（含 localhost / 私网 / 云元数据）
-    if host not in ALLOWED_HOSTS:
-        return False, f"域名不在白名单：{host}（仅允许 {', '.join(sorted(ALLOWED_HOSTS))}）"
+    # Tier B 经 domain_policy.approve_domain() 显式批准后才进入白名单；
+    # 函数内延迟导入避免模块循环依赖（domain_policy 模块级 import 本文件）。
+    tier_c_hosts: set[str] = set()
+    try:
+        from src.domain_policy import approved_hosts, TIER_C_HOSTS
+        effective = set(ALLOWED_HOSTS) | set(approved_hosts())
+        tier_c_hosts = set(TIER_C_HOSTS)
+    except Exception:
+        effective = set(ALLOWED_HOSTS)
+    if host in tier_c_hosts:
+        return False, f"域名在永久拒采清单：{host}"
+    if host not in effective:
+        return False, (
+            f"域名不在白名单：{host}（已验证 {len(ALLOWED_HOSTS)} 站 + "
+            f"人工批准 {len(effective) - len(ALLOWED_HOSTS)} 站）"
+        )
     if host in BLOCKED_HOSTS:
         return False, f" host 被明确阻断：{host}"
 

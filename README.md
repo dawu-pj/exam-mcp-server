@@ -2,6 +2,8 @@
 
 给大模型供信息的爬虫 MVP —— Python 版，本机开发。
 
+> 🌐 **通用能力已开发（2026-11-24，方案 B）**：从 7 站定向升级为"发现层开放 + 抓取层受控"——新增 `web_search`（Brave）/ `web_fetch` / `domain_risk_check` / `domain_approve` 四工具（现共 **8 工具**），Tier A/B/C 域名分级（新域默认拒绝、人工批准），抽取质量闸门拦住"HTTP 200 导航残渣"静默失败。已离线测试全过（9 项专项 + 原 MCP 全套回归），**待境外节点部署 + `BRAVE_API_KEY` 上线**。详见 `通用能力使用与部署说明.md`、`通用爬虫演进调研与实施方案.md`（P0 已拍板境外+Brave）。
+>
 > ✅ **状态（2026-11-24）：MVP + MCP + 受控扩量全部闭环**——7 站真实采集 **37 篇**（原 5 站 22 篇 + 上海/广东不同质省级公告 15 篇）、脱敏去重落盘；MCP Server 4 工具 + 双传输 + 5 层安全闸门全部实测通过。主集 doc_hit@1 80%/@3 100%（扩量门禁 ≥80% 达标），新文档 holdout 50 题 @1 98%，旧 holdout α=0.5 仍 100%。详见 `MVP交付说明.md`、`MCP接入指南.md`（大模型调用）、`部署与日常使用速查.md`（装+用入口）、**`零环境部署指南.md`**（不装 Python，推 GitHub 上云 / 国内云函数 / 便携 exe / WSL2 四条路）。
 >
 > ☁️ **免安装上云已备好**：`app.py`（ASGI 入口，`mcp.http_app(stateless_http=True)`）+ `.gitignore`（缓存/venv 排除，保留 37 篇数据）。uvicorn 起服务 + 客户端经 `/mcp` 调用已实测通过。FastMCP Gateway 入口填 `src/mcp_server.py:mcp`。
